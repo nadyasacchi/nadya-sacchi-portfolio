@@ -3,476 +3,340 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#211f20">
 <meta name="description" content="Nadya Sacchi's professional portfolio: creative writing, children's literature, Spanish voice-over, translation, editing and administrative support.">
 <title>Nadya Sacchi — Creative Portfolio</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --black: #211f20;
-  --ivory: #f5f0e8;
-  --burgundy: #792f42;
-  --rose: #c77a8a;
-  --muted: #a9a098;
-  --line: rgba(245,240,232,.2);
-  --sans: "DM Sans", Arial, sans-serif;
-  --serif: "Playfair Display", Georgia, serif;
+  --black:#211f20;
+  --ivory:#f5f0e8;
+  --burgundy:#792f42;
+  --rose:#c77a8a;
+  --muted:#a9a098;
+  --line:rgba(245,240,232,.2);
+  --sans:"DM Sans",Arial,sans-serif;
+  --serif:"Playfair Display",Georgia,serif;
 }
-
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
 body {
-  margin: 0;
-  background: var(--black);
-  color: var(--ivory);
-  font-family: var(--sans);
-  line-height: 1.65;
+  margin:0;
+  background:var(--black);
+  color:var(--ivory);
+  font-family:var(--sans);
+  line-height:1.65;
 }
-a { color: inherit; }
-a:focus-visible {
-  outline: 2px solid var(--rose);
-  outline-offset: 5px;
-}
-img { max-width: 100%; }
-.wrap { width: min(1180px, 90%); margin: auto; }
+a { color:inherit; }
+a:focus-visible { outline:2px solid var(--rose); outline-offset:5px; }
+img { max-width:100%; }
+.wrap { width:min(1180px,90%); margin:auto; }
 
 .topbar {
-  border-bottom: 1px solid var(--line);
-  font-size: .7rem;
-  text-transform: uppercase;
-  letter-spacing: .15em;
+  border-bottom:1px solid var(--line);
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.15em;
 }
 .topbar .wrap {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 12px 0;
-  color: var(--muted);
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  padding:12px 0;
+  color:var(--muted);
 }
-
-header { border-bottom: 1px solid var(--line); }
+header { border-bottom:1px solid var(--line); }
 nav {
-  min-height: 82px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
 }
 .logo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  text-decoration: none;
-  letter-spacing: -.06em;
+  font-size:1.25rem;
+  font-weight:800;
+  text-decoration:none;
+  letter-spacing:-.06em;
 }
-.logo span { color: var(--rose); }
+.logo span { color:var(--rose); }
 .navlinks {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:24px;
 }
-.navlinks a {
-  text-decoration: none;
-  font-size: .8rem;
-}
-.navlinks a:hover { color: var(--rose); }
-.navlinks .nav-cta {
-  border: 1px solid var(--rose);
-  color: var(--rose);
-  padding: 8px 14px;
-}
+.navlinks a { text-decoration:none; font-size:.8rem; }
+.navlinks a:hover { color:var(--rose); }
+.navlinks .nav-cta { border:1px solid var(--rose); color:var(--rose); padding:8px 14px; }
 
 .hero {
-  min-height: 590px;
-  display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  align-items: center;
-  gap: 45px;
-  padding-top: 65px;
-  padding-bottom: 80px;
+  min-height:590px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  align-items:center;
+  gap:45px;
+  padding-top:65px;
+  padding-bottom:80px;
 }
 .kicker {
-  color: var(--rose);
-  font-size: .72rem;
-  letter-spacing: .18em;
-  font-weight: 700;
-  text-transform: uppercase;
+  color:var(--rose);
+  font-size:.72rem;
+  letter-spacing:.18em;
+  font-weight:700;
+  text-transform:uppercase;
 }
-h1, h2, h3, p { margin-top: 0; }
+h1,h2,h3,p { margin-top:0; }
 h1 {
-  margin: 22px 0;
-  font-size: clamp(3.8rem, 8.5vw, 8rem);
-  line-height: .91;
-  letter-spacing: -.09em;
-  font-weight: 800;
+  margin:22px 0;
+  font-size:clamp(3.8rem,8.5vw,8rem);
+  line-height:.91;
+  letter-spacing:-.09em;
+  font-weight:800;
 }
-h1 .outline {
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--ivory);
-}
+h1 .outline { color:transparent; -webkit-text-stroke:1.5px var(--ivory); }
 h1 em {
-  display: block;
-  font-family: var(--serif);
-  font-weight: 500;
-  color: var(--rose);
-  letter-spacing: -.07em;
+  display:block;
+  font-family:var(--serif);
+  font-weight:500;
+  color:var(--rose);
+  letter-spacing:-.07em;
 }
-.hero-copy {
-  color: #c5bdb4;
-  max-width: 570px;
-  font-size: .98rem;
-}
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 30px;
-}
+.hero-copy { color:#c5bdb4; max-width:570px; font-size:.98rem; }
+.buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
 .btn {
-  display: inline-block;
-  text-decoration: none;
-  font-size: .8rem;
-  font-weight: 700;
-  padding: 13px 18px;
-  border: 1px solid var(--rose);
-  transition: transform .2s;
+  display:inline-block;
+  text-decoration:none;
+  font-size:.8rem;
+  font-weight:700;
+  padding:13px 18px;
+  border:1px solid var(--rose);
+  transition:transform .2s;
 }
-.btn:hover { transform: translateY(-3px); }
-.btn.primary { background: var(--burgundy); }
-.btn.secondary { color: var(--ivory); }
+.btn:hover { transform:translateY(-3px); }
+.btn.primary { background:var(--burgundy); }
+.btn.secondary { color:var(--ivory); }
 
 .hero-visual {
-  position: relative;
-  min-height: 390px;
-  background: var(--burgundy);
-  padding: 28px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position:relative;
+  min-height:390px;
+  background:var(--burgundy);
+  padding:28px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
-.hero-visual::before,
-.hero-visual::after {
-  content: "";
-  position: absolute;
-  border: 1px solid rgba(245,240,232,.5);
-  border-radius: 50%;
+.hero-visual::before,.hero-visual::after {
+  content:"";
+  position:absolute;
+  border:1px solid rgba(245,240,232,.5);
+  border-radius:50%;
 }
-.hero-visual::before {
-  width: 340px;
-  height: 340px;
-  right: -115px;
-  top: 35px;
-}
-.hero-visual::after {
-  width: 250px;
-  height: 250px;
-  right: -70px;
-  top: 80px;
-}
-.visual-index, .visual-bottom {
-  position: relative;
-  z-index: 1;
-  font-size: .68rem;
-  letter-spacing: .15em;
-  text-transform: uppercase;
+.hero-visual::before { width:340px; height:340px; right:-115px; top:35px; }
+.hero-visual::after { width:250px; height:250px; right:-70px; top:80px; }
+.visual-index,.visual-bottom {
+  position:relative;
+  z-index:1;
+  font-size:.68rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
 }
 .visual-message {
-  position: relative;
-  z-index: 1;
-  font-family: var(--serif);
-  font-size: clamp(2.2rem, 4vw, 3.8rem);
-  line-height: 1.12;
-  max-width: 310px;
+  position:relative;
+  z-index:1;
+  font-family:var(--serif);
+  font-size:clamp(2.2rem,4vw,3.8rem);
+  line-height:1.12;
+  max-width:310px;
 }
-.visual-message em { color: #efc8d0; }
+.visual-message em { color:#efc8d0; }
 
-.marquee {
-  background: var(--ivory);
-  color: var(--black);
-  padding: 16px 0;
-}
+.marquee { background:var(--ivory); color:var(--black); padding:16px 0; }
 .marquee-inner {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 13px 30px;
-  font-size: .7rem;
-  font-weight: 800;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:13px 30px;
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:.12em;
+  text-transform:uppercase;
 }
-.marquee b { color: var(--burgundy); }
+.marquee b { color:var(--burgundy); }
 
-.section { padding: 95px 0; }
-.section.light {
-  background: var(--ivory);
-  color: var(--black);
-}
+.section { padding:95px 0; }
+.section.light { background:var(--ivory); color:var(--black); }
 .section-head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 30px;
-  margin-bottom: 40px;
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:30px;
+  margin-bottom:40px;
 }
 h2 {
-  font-size: clamp(2.5rem, 5vw, 4.8rem);
-  letter-spacing: -.075em;
-  line-height: 1;
-  margin: 12px 0 0;
+  font-size:clamp(2.5rem,5vw,4.8rem);
+  letter-spacing:-.075em;
+  line-height:1;
+  margin:12px 0 0;
 }
-.section-description {
-  max-width: 390px;
-  color: var(--muted);
-  font-size: .9rem;
-  margin-bottom: 3px;
-}
-.light .section-description { color: #6c655f; }
-.light .kicker { color: var(--burgundy); }
+.section-description { max-width:390px; color:var(--muted); font-size:.9rem; margin-bottom:3px; }
+.light .section-description { color:#6c655f; }
+.light .kicker { color:var(--burgundy); }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 22px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
 }
-.project {
-  padding: 28px;
-  border: 1px solid rgba(33,31,32,.12);
-  overflow: hidden;
-}
-.project:nth-child(1) { background: var(--burgundy); color: var(--ivory); }
-.project:nth-child(2) { background: #e7ded2; color: var(--black); }
-.project:nth-child(3) { background: #302c2d; color: var(--ivory); }
-.project:nth-child(4) { background: #f5f0e8; color: var(--black); }
-
-.project-number {
-  font-size: .7rem;
-  font-weight: 700;
-  letter-spacing: .15em;
-  margin-bottom: 20px;
-}
+.project { padding:28px; border:1px solid rgba(33,31,32,.12); overflow:hidden; }
+.project:nth-child(1) { background:var(--burgundy); color:var(--ivory); }
+.project:nth-child(2) { background:#e7ded2; color:var(--black); }
+.project:nth-child(3) { background:#302c2d; color:var(--ivory); }
+.project:nth-child(4) { background:#f5f0e8; color:var(--black); }
+.project-number { font-size:.7rem; font-weight:700; letter-spacing:.15em; margin-bottom:20px; }
 .project h3 {
-  font-size: clamp(2rem, 3.7vw, 3.2rem);
-  line-height: 1.02;
-  letter-spacing: -.06em;
-  margin: 25px 0 15px;
+  font-size:clamp(2rem,3.7vw,3.2rem);
+  line-height:1.02;
+  letter-spacing:-.06em;
+  margin:25px 0 15px;
 }
-.project p {
-  font-size: .86rem;
-  opacity: .82;
-}
+.project p { font-size:.86rem; opacity:.88; }
 .project-link {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  font-size: .8rem;
-  font-weight: 700;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 4px;
+  display:inline-block;
+  margin-top:10px;
+  text-decoration:none;
+  font-size:.8rem;
+  font-weight:700;
+  border-bottom:1px solid currentColor;
+  padding-bottom:4px;
 }
-.project-link:hover { opacity: .7; }
+.project-link:hover { opacity:.7; }
 
 .project-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 12px;
-  margin-bottom: 24px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  margin-bottom:24px;
 }
 .gallery-image {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  background: var(--ivory);
-  padding: 5px;
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:contain;
+  background:var(--ivory);
+  padding:5px;
 }
-.gallery-image:hover {
-  transform: translateY(-3px);
-  transition: transform .2s;
-}
+.gallery-image:hover { transform:translateY(-3px); transition:transform .2s; }
 .cover-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: 10px;
-  margin: 18px 0 25px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+  margin:18px 0 25px;
 }
-.cover-item { min-width: 0; }
+.cover-item { min-width:0; }
 .cover-item img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: contain;
-  background: #e7ded2;
-  padding: 4px;
+  display:block;
+  width:100%;
+  aspect-ratio:3/4;
+  object-fit:contain;
+  background:#e7ded2;
+  padding:4px;
 }
 .cover-item span {
-  display: block;
-  font-size: .72rem;
-  line-height: 1.35;
-  margin-top: 7px;
-  overflow-wrap: anywhere;
+  display:block;
+  font-size:.72rem;
+  line-height:1.35;
+  margin-top:7px;
+  overflow-wrap:anywhere;
 }
 .gallery-label {
-  font-size: .67rem;
-  text-transform: uppercase;
-  letter-spacing: .12em;
-  font-weight: 700;
-  margin: 20px 0 10px;
-  opacity: .8;
+  font-size:.67rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-weight:700;
+  margin:20px 0 10px;
+  opacity:.85;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: 0 45px;
-}
-.service {
-  border-top: 1px solid var(--line);
-  padding: 27px 0;
-}
-.service h3 {
-  font-size: 1.15rem;
-  margin-bottom: 8px;
-}
-.service p {
-  color: var(--muted);
-  font-size: .88rem;
-  margin-bottom: 0;
-}
+.services-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 45px; }
+.service { border-top:1px solid var(--line); padding:27px 0; }
+.service h3 { font-size:1.15rem; margin-bottom:8px; }
+.service p { color:var(--muted); font-size:.88rem; margin-bottom:0; }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  gap: 65px;
-  align-items: center;
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:65px;
+  align-items:center;
 }
 .about-art {
-  min-height: 350px;
-  background: var(--burgundy);
-  color: var(--ivory);
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-height:350px;
+  background:var(--burgundy);
+  color:var(--ivory);
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
-.about-art strong {
-  font-family: var(--serif);
-  font-size: 3.5rem;
-  line-height: 1.05;
-  font-weight: 500;
-}
-.about-art em { color: #efc8d0; }
-.about-copy p {
-  color: #c5bdb4;
-  font-size: .93rem;
-}
-.about-copy .btn { margin-top: 8px; }
+.about-art strong { font-family:var(--serif); font-size:3.5rem; line-height:1.05; font-weight:500; }
+.about-art em { color:#efc8d0; }
+.about-copy p { color:#c5bdb4; font-size:.93rem; }
+.about-copy .btn { margin-top:8px; }
 
-.journal-grid {
-  display: grid;
-  grid-template-columns: repeat(3,minmax(0,1fr));
-  gap: 18px;
-}
+.journal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
 .journal-card {
-  background: var(--ivory);
-  color: var(--black);
-  padding: 25px;
-  min-height: 270px;
-  display: flex;
-  flex-direction: column;
+  background:var(--ivory);
+  color:var(--black);
+  padding:25px;
+  min-height:270px;
+  display:flex;
+  flex-direction:column;
 }
-.journal-card .category {
-  color: var(--burgundy);
-  font-size: .66rem;
-  font-weight: 800;
-  letter-spacing: .12em;
-}
-.journal-card h3 {
-  font-family: var(--serif);
-  font-size: 1.65rem;
-  line-height: 1.2;
-  margin: auto 0 14px;
-}
-.journal-card p {
-  color: #6c655f;
-  font-size: .86rem;
-}
-.journal-note {
-  color: var(--muted);
-  font-size: .8rem;
-  margin-top: 25px;
-}
+.journal-card .category { color:var(--burgundy); font-size:.66rem; font-weight:800; letter-spacing:.12em; }
+.journal-card h3 { font-family:var(--serif); font-size:1.65rem; line-height:1.2; margin:auto 0 14px; }
+.journal-card p { color:#6c655f; font-size:.86rem; }
+.journal-note { color:var(--muted); font-size:.8rem; margin-top:25px; }
 
-.contact {
-  background: var(--burgundy);
-  padding: 80px 0;
-}
-.contact-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 35px;
-}
-.contact h2 { max-width: 650px; }
-.contact p {
-  max-width: 540px;
-  color: #ead9dc;
-  margin-top: 20px;
-}
-.contact .btn {
-  background: var(--ivory);
-  color: var(--burgundy);
-  border-color: var(--ivory);
-  white-space: nowrap;
-}
+.contact { background:var(--burgundy); padding:80px 0; }
+.contact-inner { display:flex; align-items:center; justify-content:space-between; gap:35px; }
+.contact h2 { max-width:650px; }
+.contact p { max-width:540px; color:#ead9dc; margin-top:20px; }
+.contact .btn { background:var(--ivory); color:var(--burgundy); border-color:var(--ivory); white-space:nowrap; }
 
-footer { padding: 25px 0; }
+footer { padding:25px 0; }
 .footer-inner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 15px;
-  color: var(--muted);
-  font-size: .74rem;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:15px;
+  color:var(--muted);
+  font-size:.74rem;
 }
-footer a { text-decoration: none; }
-footer a:hover { color: var(--rose); }
+footer a { text-decoration:none; }
+footer a:hover { color:var(--rose); }
 
-@media (max-width: 760px) {
-  .topbar .wrap { font-size: .58rem; }
-  nav {
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 20px 0;
-  }
-  .navlinks { gap: 12px 18px; }
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 60px 0;
-  }
-  .hero-visual { min-height: 300px; }
-  .section { padding: 65px 0; }
-  .section-head, .contact-inner {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .project-grid, .services-grid, .about-grid, .journal-grid {
-    grid-template-columns: 1fr;
-  }
-  .project { padding: 22px; }
-  .about-grid { gap: 30px; }
-  .about-art { min-height: 260px; }
-  .contact .btn { white-space: normal; }
+@media(max-width:760px) {
+  .topbar .wrap { font-size:.58rem; }
+  nav { align-items:flex-start; flex-direction:column; padding:20px 0; }
+  .navlinks { gap:12px 18px; }
+  .hero { grid-template-columns:1fr; padding:60px 0; }
+  .hero-visual { min-height:300px; }
+  .section { padding:65px 0; }
+  .section-head,.contact-inner { align-items:flex-start; flex-direction:column; }
+  .project-grid,.services-grid,.about-grid,.journal-grid { grid-template-columns:1fr; }
+  .project { padding:22px; }
+  .about-grid { gap:30px; }
+  .about-art { min-height:260px; }
+  .contact .btn { white-space:normal; }
 }
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { transition: none; }
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { transition:none; }
 }
 </style>
 </head>
@@ -531,212 +395,133 @@ footer a:hover { color: var(--rose); }
 </div>
 
 <section class="section light" id="work">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="kicker">01 / Selected work</div>
-        <h2>Different worlds.<br>One portfolio.</h2>
-      </div>
-      <p class="section-description">
-        A selection of creative projects and professional skills, brought
-        together in one place.
-      </p>
-    </div>
-
-    <div class="project-grid">
-      <article class="project">
-        <div class="project-number">01 / FICTION</div>
-
-        <div class="gallery-label">The fiction collection · Spanish & English</div>
-        <div class="project-gallery">
-          <img class="gallery-image" src="images/fiction-spanish.png" alt="Spanish fiction collection covers" loading="lazy">
-          <img class="gallery-image" src="images/fiction-english.jpg" alt="English fiction collection covers" loading="lazy">
-        </div>
-
-        <h3>Stories that<br>stay with you.</h3>
-        <p>Meet Stories That Leave a Mark: original fiction, suspense and interactive stories with two alternative endings. The reader chooses how each story ends.</p>
-
-        <div class="gallery-label">Selected titles</div>
-        <div class="cover-grid">
-          <div class="cover-item">
-            <img src="images/crimson-shoes-es.png" alt="Los zapatos carmesí cover" loading="lazy">
-            <span>Los zapatos carmesí</span>
-          </div>
-          <div class="cover-item">
-            <img src="images/grupo-c-es.png" alt="El grupo C cover" loading="lazy">
-            <span>El grupo C</span>
-          </div>
-          <div class="cover-item">
-            <img src="images/vuelo-sombras-es.png" alt="El vuelo de las sombras cover" loading="lazy">
-            <span>El vuelo de las sombras</span>
-          </div>
-        </div>
-
-        <div class="gallery-label">English editions</div>
-        <div class="cover-grid">
-          <div class="cover-item">
-            <img src="images/crimson-shoes-en.png" alt="The Crimson Shoes cover" loading="lazy">
-            <span>The Crimson Shoes</span>
-          </div>
-          <div class="cover-item">
-            <img src="images/group-c-en.png" alt="The Group C cover" loading="lazy">
-            <span>The Group C</span>
-          </div>
-          <div class="cover-item">
-            <img src="images/shadow-flight-en.png" alt="The Shadow Flight cover" loading="lazy">
-            <span>The Shadow Flight</span>
-          </div>
-        </div>
-
-        <a class="project-link" href="https://github.com/nadyasacchi/fiction-writing-portfolio" target="_blank" rel="noopener noreferrer">Explore fiction portfolio ↗</a>
-      </article>
-
-      <article class="project">
-        <div class="project-number">02 / CHILDREN'S BOOKS</div>
-
-        <div class="gallery-label">Children's stories · Spanish & English</div>
-        <div class="project-gallery">
-          <img class="gallery-image" src="images/children-spanish.jpg" alt="Spanish children's story collection covers" loading="lazy">
-          <img class="gallery-image" src="images/children-english.jpg" alt="English children's story collection covers" loading="lazy">
-        </div>
-
-        <h3>Little stories.<br>Big feelings.</h3>
-        <p>Illustrated children's stories filled with imagination, kindness, friendship and meaningful discoveries, available in Spanish and English.</p>
-
-        <a class="project-link" href="https://github.com/nadyasacchi/childrens-stories-portfolio" target="_blank" rel="noopener noreferrer">Explore children's stories ↗</a>
-      </article>
-
-      <article class="project">
-        <div class="project-number">03 / ADMIN & DATA</div>
-        <h3>Clarity in<br>every detail.</h3>
-        <p>Structured information, data entry, spreadsheets and organised administrative work, with attention to consistency and accuracy.</p>
-        <a class="project-link" href="https://github.com/nadyasacchi/portfolio-Data-Entry" target="_blank" rel="noopener noreferrer">View data portfolio ↗</a>
-      </article>
-
-      <article class="project">
-        <div class="project-number">04 / LANGUAGE & VOICE</div>
-        <h3>Words that<br>connect.</h3>
-        <p>Spanish voice-over and narration with an Argentine accent, English-to-Spanish translation, proofreading, localisation and text quality checks.</p>
-        <a class="project-link" href="https://canva.link/j7z9srbvglvpdxk" target="_blank" rel="noopener noreferrer">Explore voice and language samples ↗</a>
-      </article>
-    </div>
+<div class="wrap">
+  <div class="section-head">
+    <div><div class="kicker">01 / Selected work</div><h2>Different worlds.<br>One portfolio.</h2></div>
+    <p class="section-description">A selection of creative projects and professional skills, brought together in one place.</p>
   </div>
+
+  <div class="project-grid">
+    <article class="project">
+      <div class="project-number">01 / FICTION</div>
+      <div class="gallery-label">The fiction collection · Spanish & English</div>
+      <div class="project-gallery">
+        <img class="gallery-image" src="fiction-spanish.png" alt="Spanish fiction collection covers" loading="lazy">
+        <img class="gallery-image" src="fiction-english.jpg" alt="English fiction collection covers" loading="lazy">
+      </div>
+      <h3>Stories that<br>stay with you.</h3>
+      <p>Meet Stories That Leave a Mark: original fiction, suspense and interactive stories with two alternative endings. The reader chooses how each story ends.</p>
+
+      <div class="gallery-label">Selected titles · Spanish</div>
+      <div class="cover-grid">
+        <div class="cover-item"><img src="crimson-shoes-es.png" alt="Los zapatos carmesí cover" loading="lazy"><span>Los zapatos carmesí</span></div>
+        <div class="cover-item"><img src="grupo-c-es.png" alt="El grupo C cover" loading="lazy"><span>El grupo C</span></div>
+        <div class="cover-item"><img src="vuelo-sombras-es.png" alt="El vuelo de las sombras cover" loading="lazy"><span>El vuelo de las sombras</span></div>
+      </div>
+
+      <div class="gallery-label">Selected titles · English</div>
+      <div class="cover-grid">
+        <div class="cover-item"><img src="crimson-shoes-en.png" alt="The Crimson Shoes cover" loading="lazy"><span>The Crimson Shoes</span></div>
+        <div class="cover-item"><img src="group-c-en.png" alt="The Group C cover" loading="lazy"><span>The Group C</span></div>
+        <div class="cover-item"><img src="shadow-flight-en.png" alt="The Shadow Flight cover" loading="lazy"><span>The Shadow Flight</span></div>
+      </div>
+      <a class="project-link" href="https://github.com/nadyasacchi/fiction-writing-portfolio" target="_blank" rel="noopener noreferrer">Explore fiction portfolio ↗</a>
+    </article>
+
+    <article class="project">
+      <div class="project-number">02 / CHILDREN'S BOOKS</div>
+      <div class="gallery-label">Children's stories · Spanish & English</div>
+      <div class="project-gallery">
+        <img class="gallery-image" src="children-spanish.jpg" alt="Spanish children's story collection covers" loading="lazy">
+        <img class="gallery-image" src="children-english.jpg" alt="English children's story collection covers" loading="lazy">
+      </div>
+      <h3>Little stories.<br>Big feelings.</h3>
+      <p>Illustrated children's stories filled with imagination, kindness, friendship and meaningful discoveries, available in Spanish and English.</p>
+      <a class="project-link" href="https://github.com/nadyasacchi/childrens-stories-portfolio" target="_blank" rel="noopener noreferrer">Explore children's stories ↗</a>
+    </article>
+
+    <article class="project">
+      <div class="project-number">03 / ADMIN & DATA</div>
+      <h3>Clarity in<br>every detail.</h3>
+      <p>Structured information, data entry, spreadsheets and organised administrative work, with attention to consistency and accuracy.</p>
+      <a class="project-link" href="https://github.com/nadyasacchi/portfolio-Data-Entry" target="_blank" rel="noopener noreferrer">View data portfolio ↗</a>
+    </article>
+
+    <article class="project">
+      <div class="project-number">04 / LANGUAGE & VOICE</div>
+      <h3>Words that<br>connect.</h3>
+      <p>Spanish voice-over and narration with an Argentine accent, English-to-Spanish translation, proofreading, localisation and text quality checks.</p>
+      <a class="project-link" href="https://canva.link/j7z9srbvglvpdxk" target="_blank" rel="noopener noreferrer">Explore voice and language samples ↗</a>
+    </article>
+  </div>
+</div>
 </section>
 
 <section class="section" id="services">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="kicker">02 / What I do</div>
-        <h2>Skills with<br>a human touch.</h2>
-      </div>
-      <p class="section-description">
-        Different services, one consistent approach: care, clarity and
-        attention to detail.
-      </p>
-    </div>
-
-    <div class="services-grid">
-      <article class="service">
-        <h3>Creative Writing & Storytelling</h3>
-        <p>Original fiction, children's stories, suspense narratives and written content.</p>
-      </article>
-      <article class="service">
-        <h3>Voice-over & Narration</h3>
-        <p>Spanish-language narration with a natural Argentine accent.</p>
-      </article>
-      <article class="service">
-        <h3>Translation & Editing</h3>
-        <p>English-to-Spanish translation, proofreading, localisation and text quality checks.</p>
-      </article>
-      <article class="service">
-        <h3>Administrative Support</h3>
-        <p>Data entry, document organisation, spreadsheets and virtual assistance.</p>
-      </article>
-    </div>
+<div class="wrap">
+  <div class="section-head">
+    <div><div class="kicker">02 / What I do</div><h2>Skills with<br>a human touch.</h2></div>
+    <p class="section-description">Different services, one consistent approach: care, clarity and attention to detail.</p>
   </div>
+  <div class="services-grid">
+    <article class="service"><h3>Creative Writing & Storytelling</h3><p>Original fiction, children's stories, suspense narratives and written content.</p></article>
+    <article class="service"><h3>Voice-over & Narration</h3><p>Spanish-language narration with a natural Argentine accent.</p></article>
+    <article class="service"><h3>Translation & Editing</h3><p>English-to-Spanish translation, proofreading, localisation and text quality checks.</p></article>
+    <article class="service"><h3>Administrative Support</h3><p>Data entry, document organisation, spreadsheets and virtual assistance.</p></article>
+  </div>
+</div>
 </section>
 
 <section class="section light" id="about">
-  <div class="wrap about-grid">
-    <div class="about-art">
-      <div class="kicker">A personal approach</div>
-      <strong>Ideas.<br>Words.<br><em>Meaning.</em></strong>
-      <div class="visual-bottom">Nadya Sacchi · Creative portfolio</div>
-    </div>
-    <div class="about-copy">
-      <div class="kicker">03 / About me</div>
-      <h2>Curious by nature.<br>Careful by choice.</h2>
-      <p>
-        I'm Nadya Sacchi, an Argentine creative professional based in Spain.
-        My work combines storytelling, language, communication and
-        organisation.
-      </p>
-      <p>
-        From developing original stories to refining written content and
-        organising information, I value thoughtful work, clear structure
-        and attention to detail.
-      </p>
-      <p>
-        This portfolio brings together my projects and professional
-        services, creating a starting point for new collaborations.
-      </p>
-      <a class="btn secondary" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer">Find me on GitHub ↗</a>
-    </div>
+<div class="wrap about-grid">
+  <div class="about-art">
+    <div class="kicker">A personal approach</div>
+    <strong>Ideas.<br>Words.<br><em>Meaning.</em></strong>
+    <div class="visual-bottom">Nadya Sacchi · Creative portfolio</div>
   </div>
+  <div class="about-copy">
+    <div class="kicker">03 / About me</div>
+    <h2>Curious by nature.<br>Careful by choice.</h2>
+    <p>I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work combines storytelling, language, communication and organisation.</p>
+    <p>From developing original stories to refining written content and organising information, I value thoughtful work, clear structure and attention to detail.</p>
+    <p>This portfolio brings together my projects and professional services, creating a starting point for new collaborations.</p>
+    <a class="btn secondary" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer">Find me on GitHub ↗</a>
+  </div>
+</div>
 </section>
 
 <section class="section" id="journal">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="kicker">04 / Notes & ideas</div>
-        <h2>The Journal.</h2>
-      </div>
-      <p class="section-description">
-        Creative reflections, practical insights and notes from behind
-        the scenes.
-      </p>
-    </div>
-
-    <div class="journal-grid">
-      <article class="journal-card">
-        <div class="category">WRITING & CREATIVITY</div>
-        <h3>Where a story begins</h3>
-        <p>How a simple idea can grow into a character, a dilemma and a world worth exploring.</p>
-      </article>
-      <article class="journal-card">
-        <div class="category">LANGUAGE & DETAIL</div>
-        <h3>The art of a careful edit</h3>
-        <p>Why clear writing depends on meaning, rhythm, consistency and the reader's experience.</p>
-      </article>
-      <article class="journal-card">
-        <div class="category">BEHIND THE WORK</div>
-        <h3>From first draft to final version</h3>
-        <p>A look at the small decisions and revisions that shape a finished project.</p>
-      </article>
-    </div>
-    <p class="journal-note">The Journal is currently a design preview. Individual articles and a dedicated blog archive can be added later.</p>
+<div class="wrap">
+  <div class="section-head">
+    <div><div class="kicker">04 / Notes & ideas</div><h2>The Journal.</h2></div>
+    <p class="section-description">Creative reflections, practical insights and notes from behind the scenes.</p>
   </div>
+  <div class="journal-grid">
+    <article class="journal-card"><div class="category">WRITING & CREATIVITY</div><h3>Where a story begins</h3><p>How a simple idea can grow into a character, a dilemma and a world worth exploring.</p></article>
+    <article class="journal-card"><div class="category">LANGUAGE & DETAIL</div><h3>The art of a careful edit</h3><p>Why clear writing depends on meaning, rhythm, consistency and the reader's experience.</p></article>
+    <article class="journal-card"><div class="category">BEHIND THE WORK</div><h3>From first draft to final version</h3><p>A look at the small decisions and revisions that shape a finished project.</p></article>
+  </div>
+  <p class="journal-note">The Journal is currently a design preview. Individual articles and a dedicated blog archive can be added later.</p>
+</div>
 </section>
 
 <section class="contact" id="contact">
-  <div class="wrap contact-inner">
-    <div>
-      <div class="kicker">05 / New projects</div>
-      <h2>Let's make<br>something meaningful.</h2>
-      <p>Have a project in mind? Get in touch to discuss creative writing, language services, Spanish narration or administrative support.</p>
-    </div>
-    <a class="btn" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer">Contact & professional profile ↗</a>
+<div class="wrap contact-inner">
+  <div>
+    <div class="kicker">05 / New projects</div>
+    <h2>Let's make<br>something meaningful.</h2>
+    <p>Have a project in mind? Get in touch to discuss creative writing, language services, Spanish narration or administrative support.</p>
   </div>
+  <a class="btn" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer">Contact & professional profile ↗</a>
+</div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap footer-inner">
-    <span>© 2026 Nadya Sacchi. All rights reserved.</span>
-    <span><a href="#home">Back to top ↑</a></span>
-  </div>
+<div class="wrap footer-inner">
+  <span>© 2026 Nadya Sacchi. All rights reserved.</span>
+  <span><a href="#home">Back to top ↑</a></span>
+</div>
 </footer>
 </body>
 </html>
