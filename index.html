@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#211f20">
-<meta name="description" content="Nadya Sacchi's professional portfolio: creative writing, children's literature, Spanish voice-over, translation, editing and administrative support.">
-<title>Nadya Sacchi — Creative Portfolio</title>
+<meta id="meta-description" name="description" content="Nadya Sacchi: content writer and editor, English-to-Spanish translator, voice-over artist, graphic designer and virtual assistant.">
+<title id="page-title">Nadya Sacchi — Creative Content, Language &amp; Administrative Support</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
@@ -73,6 +73,10 @@ nav {
 .navlinks a { text-decoration:none; font-size:.8rem; }
 .navlinks a:hover { color:var(--rose); }
 .navlinks .nav-cta { border:1px solid var(--rose); color:var(--rose); padding:8px 14px; }
+.language-switch { display:flex; gap:7px; align-items:center; font-size:.78rem; margin-left:2px; }
+.language-switch button { background:none; border:0; color:var(--muted); font:inherit; cursor:pointer; padding:4px 2px; }
+.language-switch button[aria-pressed="true"] { color:var(--rose); font-weight:800; }
+.language-switch span { color:var(--muted); }
 
 .hero {
   min-height:590px;
@@ -194,6 +198,10 @@ h2 {
   gap:22px;
 }
 .project { padding:28px; border:1px solid rgba(33,31,32,.12); overflow:hidden; }
+.project-photo { display:block; width:100%; aspect-ratio:16/10; object-fit:cover; margin:0 0 22px; }
+.about-photo { display:block; width:100%; aspect-ratio:4/5; object-fit:cover; }
+.personal-video { width:100%; display:block; margin-top:24px; background:#211f20; border:1px solid rgba(33,31,32,.18); }
+.video-caption { color:#6c655f; font-size:.78rem; margin-top:8px; }
 .project:nth-child(1) { background:var(--burgundy); color:var(--ivory); }
 .project:nth-child(2) { background:#e7ded2; color:var(--black); }
 .project:nth-child(3) { background:#302c2d; color:var(--ivory); }
@@ -285,8 +293,11 @@ h2 {
 }
 .about-art strong { font-family:var(--serif); font-size:3.5rem; line-height:1.05; font-weight:500; }
 .about-art em { color:#efc8d0; }
-.about-copy p { color:#c5bdb4; font-size:.93rem; }
+.about-copy p { color:#4b4541; font-size:.93rem; }
 .about-copy .btn { margin-top:8px; }
+/* Ensure the About button remains readable on the light section. */
+.about-copy .btn.secondary { color:var(--black); border-color:var(--burgundy); background:transparent; }
+.about-copy .btn.secondary:hover { color:var(--burgundy); }
 
 .journal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
 .journal-card {
@@ -324,6 +335,7 @@ footer a:hover { color:var(--rose); }
   .topbar .wrap { font-size:.58rem; }
   nav { align-items:flex-start; flex-direction:column; padding:20px 0; }
   .navlinks { gap:12px 18px; }
+  .language-switch { margin-left:0; }
   .hero { grid-template-columns:1fr; padding:60px 0; }
   .hero-visual { min-height:300px; }
   .section { padding:65px 0; }
@@ -344,8 +356,8 @@ footer a:hover { color:var(--rose); }
 <body>
 <div class="topbar">
   <div class="wrap">
-    <span>Independent creative professional</span>
-    <span>Spain · Remote worldwide</span>
+    <span data-i18n="top-professional">Independent creative professional</span>
+    <span data-i18n="top-location">Spain · Remote worldwide</span>
   </div>
 </div>
 
@@ -353,11 +365,12 @@ footer a:hover { color:var(--rose); }
   <nav class="wrap" aria-label="Main navigation">
     <a class="logo" href="#home">NADYA SACCHI<span>®</span></a>
     <div class="navlinks">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#journal">Journal</a>
-      <a class="nav-cta" href="#contact">Let's talk ↗</a>
+      <a href="#work" data-i18n="nav-work">Work</a>
+      <a href="#services" data-i18n="nav-services">Services</a>
+      <a href="#about" data-i18n="nav-about">About</a>
+      <a href="#journal" data-i18n="nav-journal">Journal</a>
+      <a class="nav-cta" href="#contact" data-i18n="nav-contact">Let's talk ↗</a>
+      <div class="language-switch" aria-label="Language selector"><button type="button" id="lang-en" aria-pressed="true">EN</button><span>|</span><button type="button" id="lang-es" aria-pressed="false">ES</button></div>
     </div>
   </nav>
 </header>
@@ -365,93 +378,96 @@ footer a:hover { color:var(--rose); }
 <main>
 <section class="hero wrap" id="home">
   <div>
-    <div class="kicker">Words · Stories · Creative work</div>
-    <h1>WORDS<br><span class="outline">MAKE</span><br><em>an impact.</em></h1>
-    <p class="hero-copy">
+    <div class="kicker" data-i18n="hero-kicker">Creative Content, Language &amp; Administrative Support</div>
+    <h1 data-i18n="hero-title">WORDS<br><span class="outline">MAKE</span><br><em>an impact.</em></h1>
+    <p class="hero-copy" data-i18n="hero-copy">
       I'm Nadya Sacchi, an Argentine creative professional based in Spain.
       My work brings together storytelling, Spanish voice-over, language
       services and thoughtful administrative support.
     </p>
     <div class="buttons">
-      <a class="btn primary" href="#work">Explore my work ↗</a>
-      <a class="btn secondary" href="#contact">Start a conversation</a>
+      <a class="btn primary" href="#work" data-i18n="hero-work">Explore my work ↗</a>
+      <a class="btn secondary" href="#contact" data-i18n="hero-talk">Start a conversation</a>
     </div>
   </div>
   <aside class="hero-visual">
-    <div class="visual-index">Portfolio / 2026</div>
-    <div class="visual-message">Stories that stay.<br><em>Work with purpose.</em></div>
-    <div class="visual-bottom">Creative mind. Careful execution.</div>
+    <div class="visual-index" data-i18n="visual-index">Portfolio / 2026</div>
+    <div class="visual-message" data-i18n="visual-message">Stories that stay.<br><em>Work with purpose.</em></div>
+    <div class="visual-bottom" data-i18n="visual-bottom">Creative mind. Careful execution.</div>
   </aside>
 </section>
 
 <div class="marquee">
   <div class="wrap marquee-inner">
-    <span>Creative writing</span><b>✳</b>
-    <span>Children's stories</span><b>✳</b>
-    <span>Voice-over</span><b>✳</b>
-    <span>Translation & editing</span><b>✳</b>
-    <span>Administrative support</span>
+    <span data-i18n="marquee-writing">Creative writing</span><b>✳</b>
+    <span data-i18n="marquee-children">Children's stories</span><b>✳</b>
+    <span data-i18n="marquee-voice">Voice-over</span><b>✳</b>
+    <span data-i18n="marquee-translation">Translation &amp; editing</span><b>✳</b>
+    <span data-i18n="marquee-admin">Administrative support</span>
   </div>
 </div>
 
 <section class="section light" id="work">
 <div class="wrap">
   <div class="section-head">
-    <div><div class="kicker">01 / Selected work</div><h2>Different worlds.<br>One portfolio.</h2></div>
-    <p class="section-description">A selection of creative projects and professional skills, brought together in one place.</p>
+    <div><div class="kicker" data-i18n="work-kicker">01 / Selected work</div><h2 data-i18n="work-title">Different worlds.<br>One portfolio.</h2></div>
+    <p class="section-description" data-i18n="work-description">A selection of creative projects and professional skills, brought together in one place.</p>
   </div>
 
   <div class="project-grid">
     <article class="project">
-      <div class="project-number">01 / FICTION</div>
-      <div class="gallery-label">The fiction collection · Spanish & English</div>
+      <div class="project-number" data-i18n="project-number1">01 / FICTION</div>
+      <img class="project-photo" src="escritura-edicion.png" alt="Nadya trabajando en escritura y edición" loading="lazy">
+      <div class="gallery-label" data-i18n="fiction-gallery">The fiction collection · Spanish &amp; English</div>
       <div class="project-gallery">
         <img class="gallery-image" src="fiction-spanish.png" alt="Spanish fiction collection covers" loading="lazy">
         <img class="gallery-image" src="fiction-english.jpg" alt="English fiction collection covers" loading="lazy">
       </div>
-      <h3>Stories that<br>stay with you.</h3>
-      <p>Meet Stories That Leave a Mark: original fiction, suspense and interactive stories with two alternative endings. The reader chooses how each story ends.</p>
+      <h3 data-i18n="fiction-title">Stories that<br>stay with you.</h3>
+      <p data-i18n="fiction-description">Meet Stories That Leave a Mark: original fiction, suspense and interactive stories with two alternative endings. The reader chooses how each story ends.</p>
 
-      <div class="gallery-label">Selected titles · Spanish</div>
+      <div class="gallery-label" data-i18n="selected-es">Selected titles · Spanish</div>
       <div class="cover-grid">
         <div class="cover-item"><img src="crimson-shoes-es.png" alt="Los zapatos carmesí cover" loading="lazy"><span>Los zapatos carmesí</span></div>
         <div class="cover-item"><img src="grupo-c-es.png" alt="El grupo C cover" loading="lazy"><span>El grupo C</span></div>
         <div class="cover-item"><img src="vuelo-sombras-es.png" alt="El vuelo de las sombras cover" loading="lazy"><span>El vuelo de las sombras</span></div>
       </div>
 
-      <div class="gallery-label">Selected titles · English</div>
+      <div class="gallery-label" data-i18n="selected-en">Selected titles · English</div>
       <div class="cover-grid">
         <div class="cover-item"><img src="crimson-shoes-en.png" alt="The Crimson Shoes cover" loading="lazy"><span>The Crimson Shoes</span></div>
         <div class="cover-item"><img src="group-c-en.png" alt="The Group C cover" loading="lazy"><span>The Group C</span></div>
         <div class="cover-item"><img src="shadow-flight-en.png" alt="The Shadow Flight cover" loading="lazy"><span>The Shadow Flight</span></div>
       </div>
-      <a class="project-link" href="https://github.com/nadyasacchi/fiction-writing-portfolio" target="_blank" rel="noopener noreferrer">Explore fiction portfolio ↗</a>
+      <a class="project-link" href="https://github.com/nadyasacchi/fiction-writing-portfolio" target="_blank" rel="noopener noreferrer" data-i18n="fiction-link">Explore fiction portfolio ↗</a>
     </article>
 
     <article class="project">
-      <div class="project-number">02 / CHILDREN'S BOOKS</div>
-      <div class="gallery-label">Children's stories · Spanish & English</div>
+      <div class="project-number" data-i18n="project-number2">02 / CHILDREN\'S BOOKS</div>
+      <div class="gallery-label" data-i18n="children-gallery">Children's stories · Spanish &amp; English</div>
       <div class="project-gallery">
         <img class="gallery-image" src="children-spanish.jpg" alt="Spanish children's story collection covers" loading="lazy">
         <img class="gallery-image" src="children-english.jpg" alt="English children's story collection covers" loading="lazy">
       </div>
-      <h3>Little stories.<br>Big feelings.</h3>
-      <p>Illustrated children's stories filled with imagination, kindness, friendship and meaningful discoveries, available in Spanish and English.</p>
-      <a class="project-link" href="https://github.com/nadyasacchi/childrens-stories-portfolio" target="_blank" rel="noopener noreferrer">Explore children's stories ↗</a>
+      <h3 data-i18n="children-title">Little stories.<br>Big feelings.</h3>
+      <p data-i18n="children-description">Illustrated children\'s stories filled with imagination, kindness, friendship and meaningful discoveries, available in Spanish and English.</p>
+      <a class="project-link" href="https://github.com/nadyasacchi/childrens-stories-portfolio" target="_blank" rel="noopener noreferrer" data-i18n="children-link">Explore children\'s stories ↗</a>
     </article>
 
     <article class="project">
-      <div class="project-number">03 / ADMIN & DATA</div>
-      <h3>Clarity in<br>every detail.</h3>
-      <p>Structured information, data entry, spreadsheets and organised administrative work, with attention to consistency and accuracy.</p>
-      <a class="project-link" href="https://github.com/nadyasacchi/portfolio-Data-Entry" target="_blank" rel="noopener noreferrer">View data portfolio ↗</a>
+      <div class="project-number" data-i18n="project-number3">03 / ADMIN &amp; DATA</div>
+      <img class="project-photo" src="asistencia-digital.png" alt="Nadya trabajando con herramientas digitales" loading="lazy">
+      <h3 data-i18n="admin-title">Clarity in<br>every detail.</h3>
+      <p data-i18n="admin-description">Structured information, data entry, spreadsheets and organised administrative work, with attention to consistency and accuracy.</p>
+      <a class="project-link" href="https://github.com/nadyasacchi/portfolio-Data-Entry" target="_blank" rel="noopener noreferrer" data-i18n="admin-link">View data portfolio ↗</a>
     </article>
 
     <article class="project">
-      <div class="project-number">04 / LANGUAGE & VOICE</div>
-      <h3>Words that<br>connect.</h3>
-      <p>Spanish voice-over and narration with an Argentine accent, English-to-Spanish translation, proofreading, localisation and text quality checks.</p>
-      <a class="project-link" href="https://canva.link/j7z9srbvglvpdxk" target="_blank" rel="noopener noreferrer">Explore voice and language samples ↗</a>
+      <div class="project-number" data-i18n="project-number4">04 / LANGUAGE &amp; VOICE</div>
+      <img class="project-photo" src="retrato-locucion.png" alt="Nadya con auriculares y micrófono de estudio" loading="lazy">
+      <h3 data-i18n="language-title">Words that<br>connect.</h3>
+      <p data-i18n="language-description">Spanish voice-over and narration with an Argentine accent, English-to-Spanish translation, proofreading, localisation and text quality checks.</p>
+      <a class="project-link" href="https://canva.link/j7z9srbvglvpdxk" target="_blank" rel="noopener noreferrer" data-i18n="language-link">Explore voice and language samples ↗</a>
     </article>
   </div>
 </div>
@@ -460,32 +476,35 @@ footer a:hover { color:var(--rose); }
 <section class="section" id="services">
 <div class="wrap">
   <div class="section-head">
-    <div><div class="kicker">02 / What I do</div><h2>Skills with<br>a human touch.</h2></div>
-    <p class="section-description">Different services, one consistent approach: care, clarity and attention to detail.</p>
+    <div><div class="kicker" data-i18n="services-kicker">02 / What I do</div><h2 data-i18n="services-title">Skills with<br>a human touch.</h2></div>
+    <p class="section-description" data-i18n="services-description">Different services, one consistent approach: care, clarity and attention to detail.</p>
   </div>
   <div class="services-grid">
-    <article class="service"><h3>Creative Writing & Storytelling</h3><p>Original fiction, children's stories, suspense narratives and written content.</p></article>
-    <article class="service"><h3>Voice-over & Narration</h3><p>Spanish-language narration with a natural Argentine accent.</p></article>
-    <article class="service"><h3>Translation & Editing</h3><p>English-to-Spanish translation, proofreading, localisation and text quality checks.</p></article>
-    <article class="service"><h3>Administrative Support</h3><p>Data entry, document organisation, spreadsheets and virtual assistance.</p></article>
+    <article class="service"><h3 data-i18n="service-writing-title">Creative Writing &amp; Storytelling</h3><p data-i18n="service-writing-description">Original fiction, children\'s stories, suspense narratives and written content.</p></article>
+    <article class="service"><h3 data-i18n="service-voice-title">Voice-over &amp; Narration</h3><p data-i18n="service-voice-description">Spanish-language narration with a natural Argentine accent.</p></article>
+    <article class="service"><h3 data-i18n="service-translation-title">Translation &amp; Editing</h3><p data-i18n="service-translation-description">English-to-Spanish translation, proofreading, localisation and text quality checks.</p></article>
+    <article class="service"><h3 data-i18n="service-admin-title">Administrative Support</h3><p data-i18n="service-admin-description">Data entry, document organisation, spreadsheets and virtual assistance.</p></article>
   </div>
 </div>
 </section>
 
 <section class="section light" id="about">
 <div class="wrap about-grid">
-  <div class="about-art">
-    <div class="kicker">A personal approach</div>
-    <strong>Ideas.<br>Words.<br><em>Meaning.</em></strong>
-    <div class="visual-bottom">Nadya Sacchi · Creative portfolio</div>
+  <div>
+    <img class="about-photo" src="retrato-locucion.png" alt="Nadya Sacchi, locutora y profesional creativa" loading="lazy">
+    <video class="personal-video" controls preload="metadata" playsinline>
+      <source src="presentacion-personal.mp4" type="video/mp4">
+      Your browser does not support HTML video.
+    </video>
+    <p class="video-caption" data-i18n="video-caption">My personal introduction · English and Spanish</p>
   </div>
   <div class="about-copy">
-    <div class="kicker">03 / About me</div>
-    <h2>Curious by nature.<br>Careful by choice.</h2>
-    <p>I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work combines storytelling, language, communication and organisation.</p>
-    <p>From developing original stories to refining written content and organising information, I value thoughtful work, clear structure and attention to detail.</p>
-    <p>This portfolio brings together my projects and professional services, creating a starting point for new collaborations.</p>
-    <a class="btn secondary" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer">Find me on GitHub ↗</a>
+    <div class="kicker" data-i18n="about-kicker">03 / About me</div>
+    <h2 data-i18n="about-title">Curious by nature.<br>Careful by choice.</h2>
+    <p data-i18n="about-p1">I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work combines storytelling, language, communication and organisation.</p>
+    <p data-i18n="about-p2">From developing original stories to refining written content and organising information, I value thoughtful work, clear structure and attention to detail.</p>
+    <p data-i18n="about-p3">This portfolio brings together my projects and professional services, creating a starting point for new collaborations.</p>
+    <a class="btn secondary" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer" data-i18n="github-link">Find me on GitHub ↗</a>
   </div>
 </div>
 </section>
@@ -493,35 +512,96 @@ footer a:hover { color:var(--rose); }
 <section class="section" id="journal">
 <div class="wrap">
   <div class="section-head">
-    <div><div class="kicker">04 / Notes & ideas</div><h2>The Journal.</h2></div>
-    <p class="section-description">Creative reflections, practical insights and notes from behind the scenes.</p>
+    <div><div class="kicker" data-i18n="journal-kicker">04 / Notes &amp; ideas</div><h2 data-i18n="journal-title">The Journal.</h2></div>
+    <p class="section-description" data-i18n="journal-description">Creative reflections, practical insights and notes from behind the scenes.</p>
   </div>
   <div class="journal-grid">
-    <article class="journal-card"><div class="category">WRITING & CREATIVITY</div><h3>Where a story begins</h3><p>How a simple idea can grow into a character, a dilemma and a world worth exploring.</p></article>
-    <article class="journal-card"><div class="category">LANGUAGE & DETAIL</div><h3>The art of a careful edit</h3><p>Why clear writing depends on meaning, rhythm, consistency and the reader's experience.</p></article>
-    <article class="journal-card"><div class="category">BEHIND THE WORK</div><h3>From first draft to final version</h3><p>A look at the small decisions and revisions that shape a finished project.</p></article>
+    <article class="journal-card"><div class="category" data-i18n="journal-cat1">WRITING &amp; CREATIVITY</div><h3 data-i18n="journal-title1">Where a story begins</h3><p data-i18n="journal-p1">How a simple idea can grow into a character, a dilemma and a world worth exploring.</p></article>
+    <article class="journal-card"><div class="category" data-i18n="journal-cat2">LANGUAGE &amp; DETAIL</div><h3 data-i18n="journal-title2">The art of a careful edit</h3><p data-i18n="journal-p2">Why clear writing depends on meaning, rhythm, consistency and the reader\'s experience.</p></article>
+    <article class="journal-card"><div class="category" data-i18n="journal-cat3">BEHIND THE WORK</div><h3 data-i18n="journal-title3">From first draft to final version</h3><p data-i18n="journal-p3">A look at the small decisions and revisions that shape a finished project.</p></article>
   </div>
-  <p class="journal-note">The Journal is currently a design preview. Individual articles and a dedicated blog archive can be added later.</p>
+  <p class="journal-note" data-i18n="journal-note">The Journal is currently a design preview. Individual articles and a dedicated blog archive can be added later.</p>
 </div>
 </section>
 
 <section class="contact" id="contact">
 <div class="wrap contact-inner">
   <div>
-    <div class="kicker">05 / New projects</div>
-    <h2>Let's make<br>something meaningful.</h2>
-    <p>Have a project in mind? Get in touch to discuss creative writing, language services, Spanish narration or administrative support.</p>
+    <div class="kicker" data-i18n="contact-kicker">05 / New projects</div>
+    <h2 data-i18n="contact-title">Let\'s make<br>something meaningful.</h2>
+    <p data-i18n="contact-description">Have a project in mind? Get in touch to discuss creative writing, language services, Spanish narration or administrative support.</p>
   </div>
-  <a class="btn" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer">Contact & professional profile ↗</a>
+  <a class="btn" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer" data-i18n="contact-link">Contact &amp; professional profile ↗</a>
 </div>
 </section>
 </main>
 
 <footer>
 <div class="wrap footer-inner">
-  <span>© 2026 Nadya Sacchi. All rights reserved.</span>
-  <span><a href="#home">Back to top ↑</a></span>
+  <span data-i18n="footer-copyright">© 2026 Nadya Sacchi. All rights reserved.</span>
+  <span><a href="#home" data-i18n="footer-top">Back to top ↑</a></span>
 </div>
 </footer>
+
+<script>
+const translations = {
+  en: {
+    'meta-description': "Nadya Sacchi: content writer and editor, English-to-Spanish translator, voice-over artist, graphic designer and virtual assistant.",
+    'page-title': 'Nadya Sacchi — Creative Content, Language & Administrative Support',
+    'top-professional':'Independent creative professional','top-location':'Spain · Remote worldwide',
+    'nav-work':'Work','nav-services':'Services','nav-about':'About','nav-journal':'Journal','nav-contact':"Let's talk ↗",
+    'hero-kicker':'Creative Content, Language &amp; Administrative Support','hero-title':'WORDS<br><span class="outline">MAKE</span><br><em>an impact.</em>','project-number1':'01 / FICTION','project-number2':'02 / CHILDREN\'S BOOKS','project-number3':'03 / ADMIN &amp; DATA','project-number4':'04 / LANGUAGE &amp; VOICE',
+    'hero-copy':"I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work brings together storytelling, Spanish voice-over, English-to-Spanish translation, content writing and editing, graphic design and reliable administrative support.",
+    'hero-work':'Explore my work ↗','hero-talk':'Start a conversation','visual-index':'Portfolio / 2026','visual-message':'Stories that stay.<br><em>Work with purpose.</em>','visual-bottom':'Creative mind. Careful execution.',
+    'marquee-writing':'Creative writing','marquee-children':"Children's stories",'marquee-voice':'Voice-over','marquee-translation':'Translation &amp; editing','marquee-admin':'Administrative support',
+    'work-kicker':'01 / Selected work','work-title':'Different worlds.<br>One portfolio.','work-description':'A selection of creative projects and professional skills, brought together in one place.',
+    'fiction-gallery':'The fiction collection · Spanish &amp; English','fiction-title':'Stories that<br>stay with you.','fiction-description':'Meet Stories That Leave a Mark: original fiction, suspense and interactive stories with two alternative endings. The reader chooses how each story ends.','selected-es':'Selected titles · Spanish','selected-en':'Selected titles · English','fiction-link':'Explore fiction portfolio ↗',
+    'children-gallery':"Children's stories · Spanish &amp; English",'children-title':'Little stories.<br>Big feelings.','children-description':"Illustrated children\'s stories filled with imagination, kindness, friendship and meaningful discoveries, available in Spanish and English.",'children-link':"Explore children\'s stories ↗",'admin-title':'Clarity in<br>every detail.','admin-description':'Structured information, data entry, spreadsheets and organised administrative work, with attention to consistency and accuracy.','admin-link':'View data portfolio ↗','language-title':'Words that<br>connect.','language-description':'Spanish voice-over and narration with an Argentine accent, English-to-Spanish translation, proofreading, localisation and text quality checks.','language-link':'Explore voice and language samples ↗',
+    'services-kicker':'02 / What I do','services-title':'Skills with<br>a human touch.','services-description':'Different services, one consistent approach: care, clarity and attention to detail.','service-writing-title':'Creative Writing &amp; Storytelling','service-writing-description':"Original fiction, children\'s stories, suspense narratives and written content.",'service-voice-title':'Voice-over &amp; Narration','service-voice-description':'Spanish-language narration with a natural Argentine accent.','service-translation-title':'Translation &amp; Editing','service-translation-description':'English-to-Spanish translation, proofreading, localisation and text quality checks.','service-admin-title':'Administrative Support','service-admin-description':'Data entry, document organisation, spreadsheets and virtual assistance.',
+    'about-art-kicker':'A personal approach','about-art-title':'Ideas.<br>Words.<br><em>Meaning.</em>','about-art-bottom':'Nadya Sacchi · Creative portfolio','about-kicker':'03 / About me','about-title':'Curious by nature.<br>Careful by choice.','about-p1':"I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work combines storytelling, language, communication and organisation.",'about-p2':'From developing original stories to refining written content and organising information, I value thoughtful work, clear structure and attention to detail.','about-p3':'This portfolio brings together my projects and professional services, creating a starting point for new collaborations.','github-link':'Find me on GitHub ↗','video-caption':'My personal introduction · English and Spanish',
+    'journal-kicker':'04 / Notes &amp; ideas','journal-title':'The Journal.','journal-description':'Creative reflections, practical insights and notes from behind the scenes.','journal-cat1':'WRITING &amp; CREATIVITY','journal-title1':'Where a story begins','journal-p1':'How a simple idea can grow into a character, a dilemma and a world worth exploring.','journal-cat2':'LANGUAGE &amp; DETAIL','journal-title2':'The art of a careful edit','journal-p2':"Why clear writing depends on meaning, rhythm, consistency and the reader\'s experience.",'journal-cat3':'BEHIND THE WORK','journal-title3':'From first draft to final version','journal-p3':'A look at the small decisions and revisions that shape a finished project.','journal-note':'The Journal is currently a design preview. Individual articles and a dedicated blog archive can be added later.',
+    'contact-kicker':'05 / New projects','contact-title':"Let\'s make<br>something meaningful.",'contact-description':'Have a project in mind? Get in touch to discuss creative writing, language services, Spanish narration or administrative support.','contact-link':'Contact &amp; professional profile ↗','footer-copyright':'© 2026 Nadya Sacchi. All rights reserved.','footer-top':'Back to top ↑'
+  },
+  es: {
+    'meta-description':'Nadya Sacchi: redactora y editora de contenidos, traductora de inglés a español, locutora, diseñadora gráfica y asistente virtual.',
+    'page-title':'Nadya Sacchi — Contenido creativo, idiomas y asistencia administrativa',
+    'top-professional':'Profesional creativa independiente','top-location':'España · Trabajo remoto internacional',
+    'nav-work':'Trabajos','nav-services':'Servicios','nav-about':'Sobre mí','nav-journal':'Blog','nav-contact':'Hablemos ↗',
+    'hero-kicker':'Contenido creativo, idiomas y asistencia administrativa','hero-title':'PALABRAS<br><span class="outline">QUE</span><br><em>dejan huella.</em>','project-number1':'01 / FICCIÓN','project-number2':'02 / CUENTOS INFANTILES','project-number3':'03 / ADMINISTRACIÓN Y DATOS','project-number4':'04 / IDIOMAS Y VOZ',
+    'hero-copy':'Soy Nadya Sacchi, profesional creativa argentina residente en España. Mi trabajo combina narrativa, locución en español, traducción del inglés al español, redacción y edición de contenidos, diseño gráfico y asistencia administrativa.',
+    'hero-work':'Ver mis trabajos ↗','hero-talk':'Hablemos de tu proyecto','visual-index':'Portfolio / 2026','visual-message':'Historias que perduran.<br><em>Trabajo con propósito.</em>','visual-bottom':'Creatividad y atención al detalle.',
+    'marquee-writing':'Escritura creativa','marquee-children':'Cuentos infantiles','marquee-voice':'Locución','marquee-translation':'Traducción y edición','marquee-admin':'Asistencia administrativa',
+    'work-kicker':'01 / Trabajos seleccionados','work-title':'Mundos diferentes.<br>Un solo portfolio.','work-description':'Una selección de proyectos creativos y habilidades profesionales reunidos en un mismo lugar.',
+    'fiction-gallery':'Colección de ficción · Español e inglés','fiction-title':'Historias que<br>dejan huella.','fiction-description':'Conocé Stories That Leave a Mark: relatos originales de ficción y suspense con dos finales alternativos. El lector elige cómo termina cada historia.','selected-es':'Títulos seleccionados · Español','selected-en':'Títulos seleccionados · Inglés','fiction-link':'Ver portfolio de ficción ↗',
+    'children-gallery':'Cuentos infantiles · Español e inglés','children-title':'Historias pequeñas.<br>Grandes emociones.','children-description':'Cuentos infantiles ilustrados llenos de imaginación, amabilidad, amistad y descubrimientos significativos, disponibles en español e inglés.','children-link':'Ver cuentos infantiles ↗','admin-title':'Claridad en<br>cada detalle.','admin-description':'Organización de información, entrada de datos, hojas de cálculo y tareas administrativas, con atención a la coherencia y la precisión.','admin-link':'Ver portfolio de datos ↗','language-title':'Palabras que<br>conectan.','language-description':'Locución y narración en español con acento argentino, traducción del inglés al español, corrección, adaptación lingüística y control de calidad de textos.','language-link':'Ver muestras de voz e idiomas ↗',
+    'services-kicker':'02 / Qué hago','services-title':'Profesionalidad<br>con un toque humano.','services-description':'Servicios diferentes con una misma forma de trabajar: cuidado, claridad y atención al detalle.','service-writing-title':'Escritura creativa y narrativa','service-writing-description':'Ficción original, cuentos infantiles, relatos de suspense y redacción de contenidos.','service-voice-title':'Locución y narración','service-voice-description':'Narración en español con acento argentino natural.','service-translation-title':'Traducción y edición','service-translation-description':'Traducción del inglés al español, corrección, adaptación lingüística y control de calidad de textos.','service-admin-title':'Asistencia administrativa','service-admin-description':'Entrada de datos, organización de documentos, hojas de cálculo y asistencia virtual.',
+    'about-art-kicker':'Una forma personal de trabajar','about-art-title':'Ideas.<br>Palabras.<br><em>Sentido.</em>','about-art-bottom':'Nadya Sacchi · Portfolio creativo','about-kicker':'03 / Sobre mí','about-title':'Curiosa por naturaleza.<br>Cuidadosa por elección.','about-p1':'Soy Nadya Sacchi, profesional creativa argentina residente en España. Mi trabajo combina narrativa, idiomas, comunicación y organización.','about-p2':'Desde desarrollar historias originales hasta revisar textos y organizar información, valoro el trabajo cuidado, la estructura clara y la atención al detalle.','about-p3':'Este portfolio reúne mis proyectos y servicios profesionales y sirve como punto de partida para nuevas colaboraciones.','github-link':'Encontrame en GitHub ↗','video-caption':'Mi presentación personal · Inglés y español',
+    'journal-kicker':'04 / Notas e ideas','journal-title':'El blog.','journal-description':'Reflexiones creativas, ideas prácticas y notas sobre el proceso de trabajo.','journal-cat1':'ESCRITURA Y CREATIVIDAD','journal-title1':'Dónde empieza una historia','journal-p1':'Cómo una idea sencilla puede convertirse en un personaje, un dilema y un mundo por descubrir.','journal-cat2':'IDIOMAS Y DETALLES','journal-title2':'El arte de corregir con cuidado','journal-p2':'Por qué una escritura clara depende del significado, el ritmo, la coherencia y la experiencia del lector.','journal-cat3':'DETRÁS DEL TRABAJO','journal-title3':'Del primer borrador a la versión final','journal-p3':'Una mirada a las pequeñas decisiones y revisiones que dan forma a un proyecto terminado.','journal-note':'Esta sección es actualmente una vista previa del diseño. Más adelante se pueden añadir artículos y un archivo de blog.',
+    'contact-kicker':'05 / Nuevos proyectos','contact-title':'Creemos algo<br>que tenga sentido.','contact-description':'¿Tenés un proyecto en mente? Escribime para conversar sobre escritura creativa, servicios lingüísticos, narración en español o asistencia administrativa.','contact-link':'Contacto y perfil profesional ↗','footer-copyright':'© 2026 Nadya Sacchi. Todos los derechos reservados.','footer-top':'Volver al inicio ↑'
+  }
+};
+function setLanguage(lang) {
+  const dict = translations[lang] || translations.en;
+  if (!document.getElementById('lang-en') || !document.getElementById('lang-es')) return;
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const value = dict[el.dataset.i18n];
+    if (value !== undefined) el.innerHTML = value;
+  });
+  document.getElementById('page-title').textContent = dict['page-title'];
+  document.getElementById('meta-description').setAttribute('content', dict['meta-description']);
+  document.getElementById('lang-en').setAttribute('aria-pressed', String(lang === 'en'));
+  document.getElementById('lang-es').setAttribute('aria-pressed', String(lang === 'es'));
+  try { localStorage.setItem('nadyaPortfolioLanguage', lang); } catch(e) {}
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('lang-en')?.addEventListener('click', () => setLanguage('en'));
+  document.getElementById('lang-es')?.addEventListener('click', () => setLanguage('es'));
+});
+let savedLanguage = 'en';
+try { savedLanguage = localStorage.getItem('nadyaPortfolioLanguage') || 'en'; } catch(e) {}
+setLanguage(savedLanguage);
+</script>
+
 </body>
 </html>
