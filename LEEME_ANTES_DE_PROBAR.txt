@@ -1,0 +1,21 @@
+NADYA SACCHI — PORTFOLIO CORREGIDO
+
+Esta versión integra las imágenes y archivos originales del ZIP que enviaste con las páginas del portfolio.
+
+Cambios aplicados:
+- Corregidas las rutas de imágenes que no coincidían con los nombres/extensiones reales.
+- Fondo oscuro coherente en todas las páginas.
+- Previsualizaciones de muestras en formato 16:9 con object-fit: contain para evitar recortes.
+- Ajuste de caricaturas y retrato de About Me para mostrar el contenido completo.
+- Mejor interlineado en párrafos y descripciones.
+- Separación y espaciado de los textos superiores de profesión y ubicación.
+- Se mantienen páginas independientes por especialidad y navegación entre ellas.
+- Sin sección de contacto ni enlaces a GitHub.
+
+PARA PROBAR:
+1. Extrae TODO el contenido del ZIP en una carpeta nueva.
+2. Abre index.html con el navegador.
+3. Entra en cada área desde las tarjetas de la portada.
+4. Comprueba las imágenes y los vídeos localmente.
+
+Importante: esta es una versión local para revisión. No sustituye automáticamente los archivos de la web publicada.

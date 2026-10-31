@@ -1,0 +1,22 @@
+CORRECCIONES 3 — NADYA PORTFOLIO 2026
+
+Base de trabajo: NADYA_PORTFOLIO_2026_CORRECCIONES_2(1).zip
+
+Cambios aplicados exclusivamente a las secciones acordadas:
+- Writing & Content: mayor legibilidad en etiquetas y descripciones; muestras de reflexión separadas por idioma para que al elegir EN se vean las cuatro piezas inglesas (Letter to My Argentina, Enough, My Former Self y When Silence Answers), y al elegir ES las piezas en español. Se añadió también la muestra española de Sammy «El primer acto de valentía».
+- Voice Lab: aumento de tamaño y contraste de la descripción gris y de las etiquetas burdeos/rosa, en ambos idiomas.
+- Translation & Editing: aumento de tamaño y contraste de la descripción y de las etiquetas, en ambos idiomas.
+- Admin & Data: aumento de tamaño y contraste de la descripción y de las etiquetas; traducción al español de los títulos y etiquetas de las tarjetas, en ambos idiomas.
+- Visual Playground: aumento de tamaño y contraste de la descripción y de las etiquetas; traducción al español de títulos y etiquetas de tarjetas y vídeos al cambiar el idioma.
+
+Protección verificada:
+- index.html (Inicio/Home) no fue modificado.
+- about.html (Sobre mí/About Me) no fue modificado.
+- No se cambiaron los archivos de imágenes ni de vídeo ya incluidos en la base, ni el orden de las tarjetas visuales.
+
+Validación realizada:
+- HTML de las cinco páginas editadas analizado.
+- Sintaxis JavaScript de sus scripts en línea comprobada.
+- Confirmada la presencia de las imágenes inglesas de reflexión y de la muestra española de Sammy.
+
+Para probar: extraer el ZIP completo en una carpeta nueva y abrir index.html. No separar los HTML de las subcarpetas de recursos.

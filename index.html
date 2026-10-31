@@ -1,607 +1,211 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#211f20">
-<meta id="meta-description" name="description" content="Nadya Sacchi: content writer and editor, English-to-Spanish translator, voice-over artist, graphic designer and virtual assistant.">
-<title id="page-title">Nadya Sacchi — Creative Content, Language &amp; Administrative Support</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta id="meta-description" name="description" content="Nadya Sacchi — creative, language, visual and administrative portfolio.">
+<title id="page-title">Nadya Sacchi — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-
 <style>
-:root {
-  --black:#211f20;
-  --ivory:#f5f0e8;
-  --burgundy:#792f42;
-  --rose:#c77a8a;
-  --muted:#a9a098;
-  --line:rgba(245,240,232,.2);
-  --sans:"DM Sans",Arial,sans-serif;
-  --serif:"Playfair Display",Georgia,serif;
-}
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body {
-  margin:0;
-  background:var(--black);
-  color:var(--ivory);
-  font-family:var(--sans);
-  line-height:1.65;
-}
-a { color:inherit; }
-a:focus-visible { outline:2px solid var(--rose); outline-offset:5px; }
-img { max-width:100%; }
-.wrap { width:min(1180px,90%); margin:auto; }
+:root{--black:#211f20;--ivory:#f5f0e8;--burgundy:#792f42;--rose:#c77a8a;--muted:#a9a098;--line:rgba(245,240,232,.2);--sans:"DM Sans",Arial,sans-serif;--serif:"Playfair Display",Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:25px}body{margin:0;background:var(--black);color:var(--ivory);font-family:var(--sans);line-height:1.65}a{color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--rose);outline-offset:4px}img,video{max-width:100%}.wrap{width:min(1180px,90%);margin:auto}
+.topbar{border-bottom:1px solid var(--line);font-size:.7rem;text-transform:uppercase;letter-spacing:.15em}.topbar .wrap{display:flex;justify-content:space-between;gap:15px;padding:12px 0;color:var(--muted)}
+header{border-bottom:1px solid var(--line)}nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo{font-size:1.25rem;font-weight:800;text-decoration:none;letter-spacing:-.06em;white-space:nowrap}.logo span{color:var(--rose)}.navlinks{display:flex;align-items:center;flex-wrap:wrap;gap:18px}.navlinks>a{text-decoration:none;font-size:.78rem}.navlinks>a:hover{color:var(--rose)}.navlinks .nav-cta{border:1px solid var(--rose);color:var(--rose);padding:7px 12px}.language-switch{display:flex;gap:7px;align-items:center;font-size:.78rem}.language-switch button{background:none;border:0;color:var(--muted);font:inherit;cursor:pointer;padding:4px 2px}.language-switch button[aria-pressed=true]{color:var(--rose);font-weight:800}
+.hero{min-height:570px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px;padding-top:65px;padding-bottom:80px}.kicker{color:var(--rose);font-size:.72rem;letter-spacing:.18em;font-weight:700;text-transform:uppercase}h1,h2,h3,p{margin-top:0}h1{margin:22px 0;font-size:clamp(3.7rem,8.5vw,7.5rem);line-height:.91;letter-spacing:-.09em;font-weight:800}h1 .outline{color:transparent;-webkit-text-stroke:1.5px var(--ivory)}h1 em{display:block;font-family:var(--serif);font-weight:500;color:var(--rose);letter-spacing:-.07em}.hero-copy{color:#c5bdb4;max-width:590px;font-size:.98rem}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-block;text-decoration:none;font-size:.8rem;font-weight:700;padding:12px 17px;border:1px solid var(--rose);transition:transform .2s}.btn:hover{transform:translateY(-3px)}.btn.primary{background:var(--burgundy)}.btn.secondary{color:var(--ivory)}
+.hero-visual{position:relative;min-height:380px;background:var(--burgundy);padding:28px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}.hero-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:.78;background:#792f42}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(121,47,66,.12),rgba(33,31,32,.34))}.visual-index,.visual-message,.visual-bottom{position:relative;z-index:1}.visual-index,.visual-bottom{font-size:.68rem;line-height:1.5;letter-spacing:.12em;text-transform:uppercase}.visual-bottom{margin-top:16px;max-width:100%;font-weight:700}.visual-message{font-family:var(--serif);font-size:clamp(1.9rem,3.1vw,3.05rem);line-height:1.08;max-width:100%;overflow-wrap:normal;hyphens:none}.visual-message em{color:#efc8d0}.hero-es-message{display:block;line-height:.91;letter-spacing:-.025em}
+.marquee{background:var(--ivory);color:var(--black);padding:16px 0}.marquee-inner{display:flex;justify-content:center;flex-wrap:wrap;gap:13px 25px;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.marquee b{color:var(--burgundy)}
+.section{padding:90px 0}.section.light{background:var(--ivory);color:var(--black)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:38px}h2{font-size:clamp(2.5rem,5vw,4.6rem);letter-spacing:-.075em;line-height:1;margin:12px 0 0}.section-description{max-width:420px;color:var(--muted);font-size:.9rem;margin-bottom:3px}.light .section-description{color:#6c655f}.light .kicker{color:var(--burgundy)}
+.intro-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.intro-card{border:1px solid rgba(245,240,232,.18);padding:23px;min-height:190px;text-decoration:none;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s}.intro-card:hover{transform:translateY(-4px);border-color:var(--rose)}.intro-card .number{font-size:.68rem;letter-spacing:.15em;color:var(--rose)}.intro-card h3{font-size:1.55rem;line-height:1.1;letter-spacing:-.04em;margin:25px 0 10px}.intro-card p{font-size:.83rem;color:#c5bdb4;margin:0}.intro-card .arrow{align-self:flex-end;color:var(--rose);font-size:1.25rem}
+.portfolio-section{border-top:1px solid var(--line)}.portfolio-section.light{border-color:rgba(33,31,32,.14)}.section-intro{max-width:720px;color:#c5bdb4;font-size:.92rem}.light .section-intro{color:#6c655f}.subheading{font-family:var(--serif);font-size:1.65rem;margin:34px 0 14px}.asset-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.asset-card{min-width:0;background:#302c2d;border:1px solid rgba(245,240,232,.12);overflow:hidden;display:flex;flex-direction:column}.light .asset-card{background:#fffaf3;border-color:rgba(33,31,32,.12)}.asset-preview{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#e7ded2;color:#211f20;max-height:none}.asset-preview.cover{aspect-ratio:16/9;object-fit:contain}.asset-body{padding:16px;display:flex;flex-direction:column;flex:1}.asset-body h4{font-size:1rem;line-height:1.3;margin:0 0 7px;overflow-wrap:anywhere}.asset-body p{font-size:.78rem;color:#c5bdb4;margin:0 0 12px}.light .asset-body p{color:#6c655f}.asset-link{font-size:.75rem;font-weight:700;text-decoration:none;border-bottom:1px solid var(--rose);padding-bottom:3px;align-self:flex-start;margin-top:auto}.light .asset-link{border-color:var(--burgundy)}.asset-link:hover{opacity:.7}.tag{font-size:.62rem;text-transform:uppercase;letter-spacing:.12em;color:var(--rose);margin-bottom:8px}.light .tag{color:var(--burgundy)}.empty-note{font-size:.8rem;color:var(--muted);margin-top:16px}
+.services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 45px}.service{border-top:1px solid var(--line);padding:24px 0}.service h3{font-size:1.1rem;margin-bottom:8px}.service p{color:var(--muted);font-size:.88rem;margin-bottom:0}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}.about-photo{display:block;width:100%;max-height:480px;aspect-ratio:4/5;object-fit:contain;object-position:center;background:#e7ded2}.personal-video{width:100%;display:block;margin-top:18px;background:#211f20}.video-caption{color:#6c655f;font-size:.78rem;margin-top:8px}.about-copy p{color:#4b4541;font-size:.93rem}.about-copy .btn{margin-top:8px}.about-copy .btn.secondary{color:var(--black);border-color:var(--burgundy);background:transparent}.about-copy .btn.secondary:hover{color:var(--burgundy)}
 
-.topbar {
-  border-bottom:1px solid var(--line);
-  font-size:.7rem;
-  text-transform:uppercase;
-  letter-spacing:.15em;
-}
-.topbar .wrap {
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  padding:12px 0;
-  color:var(--muted);
-}
-header { border-bottom:1px solid var(--line); }
-nav {
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:25px;
-}
-.logo {
-  font-size:1.25rem;
-  font-weight:800;
-  text-decoration:none;
-  letter-spacing:-.06em;
-}
-.logo span { color:var(--rose); }
-.navlinks {
-  display:flex;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:24px;
-}
-.navlinks a { text-decoration:none; font-size:.8rem; }
-.navlinks a:hover { color:var(--rose); }
-.navlinks .nav-cta { border:1px solid var(--rose); color:var(--rose); padding:8px 14px; }
-.language-switch { display:flex; gap:7px; align-items:center; font-size:.78rem; margin-left:2px; }
-.language-switch button { background:none; border:0; color:var(--muted); font:inherit; cursor:pointer; padding:4px 2px; }
-.language-switch button[aria-pressed="true"] { color:var(--rose); font-weight:800; }
-.language-switch span { color:var(--muted); }
+footer{padding:25px 0}.footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;color:var(--muted);font-size:.74rem}footer a{text-decoration:none}footer a:hover{color:var(--rose)}
+@media(max-width:900px){.navlinks{gap:12px}.navlinks>a{font-size:.72rem}.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.intro-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.topbar .wrap{font-size:.57rem}.topbar .wrap span:last-child{text-align:right}nav{align-items:flex-start;flex-direction:column;padding:18px 0}.navlinks{gap:12px 16px}.hero{grid-template-columns:1fr;padding:55px 0}.hero-visual{min-height:290px}.section{padding:62px 0}.section-head,.contact-inner{align-items:flex-start;flex-direction:column}.intro-grid,.asset-grid,.services-grid,.about-grid{grid-template-columns:1fr}.about-grid{gap:28px}.intro-card{min-height:150px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none}}
 
-.hero {
-  min-height:590px;
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  align-items:center;
-  gap:45px;
-  padding-top:65px;
-  padding-bottom:80px;
+/* Final visual polish: full artwork visible, no forced cropping */
+.asset-preview,.asset-preview.cover,.section-portrait {
+  width:100%; height:auto; aspect-ratio:auto; max-height:none;
+  object-fit:contain !important; object-position:center; display:block;
+  background:#3b252c; cursor:zoom-in;
 }
-.kicker {
-  color:var(--rose);
-  font-size:.72rem;
-  letter-spacing:.18em;
-  font-weight:700;
-  text-transform:uppercase;
-}
-h1,h2,h3,p { margin-top:0; }
-h1 {
-  margin:22px 0;
-  font-size:clamp(3.8rem,8.5vw,8rem);
-  line-height:.91;
-  letter-spacing:-.09em;
-  font-weight:800;
-}
-h1 .outline { color:transparent; -webkit-text-stroke:1.5px var(--ivory); }
-h1 em {
-  display:block;
-  font-family:var(--serif);
-  font-weight:500;
-  color:var(--rose);
-  letter-spacing:-.07em;
-}
-.hero-copy { color:#c5bdb4; max-width:570px; font-size:.98rem; }
-.buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
-.btn {
-  display:inline-block;
-  text-decoration:none;
-  font-size:.8rem;
-  font-weight:700;
-  padding:13px 18px;
-  border:1px solid var(--rose);
-  transition:transform .2s;
-}
-.btn:hover { transform:translateY(-3px); }
-.btn.primary { background:var(--burgundy); }
-.btn.secondary { color:var(--ivory); }
+.asset-card { background:#302329; border-color:rgba(199,122,138,.28); }
+.asset-body { line-height:1.75; }
+.asset-body p { line-height:1.75; }
+.hero-visual { background:#792f42; border:1px solid rgba(199,122,138,.45); }
+.hero-visual img { object-fit:contain !important; opacity:.82 !important; }
+.hero-visual:after { background:linear-gradient(135deg,rgba(121,47,66,.10),rgba(33,31,32,.30)) !important; }
+.about-grid { grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr); gap:38px; }
+.about-photo { width:100%; height:auto; max-height:560px; aspect-ratio:auto; object-fit:contain !important; object-position:center top; background:#3b252c; }
+@media(max-width:700px){ .about-grid{grid-template-columns:1fr;} }
 
-.hero-visual {
-  position:relative;
-  min-height:390px;
-  background:var(--burgundy);
-  padding:28px;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-.hero-visual::before,.hero-visual::after {
-  content:"";
-  position:absolute;
-  border:1px solid rgba(245,240,232,.5);
-  border-radius:50%;
-}
-.hero-visual::before { width:340px; height:340px; right:-115px; top:35px; }
-.hero-visual::after { width:250px; height:250px; right:-70px; top:80px; }
-.visual-index,.visual-bottom {
-  position:relative;
-  z-index:1;
-  font-size:.68rem;
-  letter-spacing:.15em;
-  text-transform:uppercase;
-}
-.visual-message {
-  position:relative;
-  z-index:1;
-  font-family:var(--serif);
-  font-size:clamp(2.2rem,4vw,3.8rem);
-  line-height:1.12;
-  max-width:310px;
-}
-.visual-message em { color:#efc8d0; }
 
-.marquee { background:var(--ivory); color:var(--black); padding:16px 0; }
-.marquee-inner {
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:13px 30px;
-  font-size:.7rem;
-  font-weight:800;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-}
-.marquee b { color:var(--burgundy); }
-
-.section { padding:95px 0; }
-.section.light { background:var(--ivory); color:var(--black); }
-.section-head {
-  display:flex;
-  align-items:end;
-  justify-content:space-between;
-  gap:30px;
-  margin-bottom:40px;
-}
-h2 {
-  font-size:clamp(2.5rem,5vw,4.8rem);
-  letter-spacing:-.075em;
-  line-height:1;
-  margin:12px 0 0;
-}
-.section-description { max-width:390px; color:var(--muted); font-size:.9rem; margin-bottom:3px; }
-.light .section-description { color:#6c655f; }
-.light .kicker { color:var(--burgundy); }
-
-.project-grid {
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:22px;
-}
-.project { padding:28px; border:1px solid rgba(33,31,32,.12); overflow:hidden; }
-.project-photo { display:block; width:100%; aspect-ratio:16/10; object-fit:cover; margin:0 0 22px; }
-.about-photo { display:block; width:100%; aspect-ratio:4/5; object-fit:cover; }
-.personal-video { width:100%; display:block; margin-top:24px; background:#211f20; border:1px solid rgba(33,31,32,.18); }
-.video-caption { color:#6c655f; font-size:.78rem; margin-top:8px; }
-.project:nth-child(1) { background:var(--burgundy); color:var(--ivory); }
-.project:nth-child(2) { background:#e7ded2; color:var(--black); }
-.project:nth-child(3) { background:#302c2d; color:var(--ivory); }
-.project:nth-child(4) { background:#f5f0e8; color:var(--black); }
-.project-number { font-size:.7rem; font-weight:700; letter-spacing:.15em; margin-bottom:20px; }
-.project h3 {
-  font-size:clamp(2rem,3.7vw,3.2rem);
-  line-height:1.02;
-  letter-spacing:-.06em;
-  margin:25px 0 15px;
-}
-.project p { font-size:.86rem; opacity:.88; }
-.project-link {
-  display:inline-block;
-  margin-top:10px;
-  text-decoration:none;
-  font-size:.8rem;
-  font-weight:700;
-  border-bottom:1px solid currentColor;
-  padding-bottom:4px;
-}
-.project-link:hover { opacity:.7; }
-
-.project-gallery {
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:12px;
-  margin-bottom:24px;
-}
-.gallery-image {
-  display:block;
-  width:100%;
-  aspect-ratio:4/3;
-  object-fit:contain;
-  background:var(--ivory);
-  padding:5px;
-}
-.gallery-image:hover { transform:translateY(-3px); transition:transform .2s; }
-.cover-grid {
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:10px;
-  margin:18px 0 25px;
-}
-.cover-item { min-width:0; }
-.cover-item img {
-  display:block;
-  width:100%;
-  aspect-ratio:3/4;
-  object-fit:contain;
-  background:#e7ded2;
-  padding:4px;
-}
-.cover-item span {
-  display:block;
-  font-size:.72rem;
-  line-height:1.35;
-  margin-top:7px;
-  overflow-wrap:anywhere;
-}
-.gallery-label {
-  font-size:.67rem;
-  text-transform:uppercase;
-  letter-spacing:.12em;
-  font-weight:700;
-  margin:20px 0 10px;
-  opacity:.85;
-}
-
-.services-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 45px; }
-.service { border-top:1px solid var(--line); padding:27px 0; }
-.service h3 { font-size:1.15rem; margin-bottom:8px; }
-.service p { color:var(--muted); font-size:.88rem; margin-bottom:0; }
-
-.about-grid {
-  display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  gap:65px;
-  align-items:center;
-}
-.about-art {
-  min-height:350px;
-  background:var(--burgundy);
-  color:var(--ivory);
-  padding:30px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-.about-art strong { font-family:var(--serif); font-size:3.5rem; line-height:1.05; font-weight:500; }
-.about-art em { color:#efc8d0; }
-.about-copy p { color:#4b4541; font-size:.93rem; }
-.about-copy .btn { margin-top:8px; }
-/* Ensure the About button remains readable on the light section. */
-.about-copy .btn.secondary { color:var(--black); border-color:var(--burgundy); background:transparent; }
-.about-copy .btn.secondary:hover { color:var(--burgundy); }
-
-.journal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
-.journal-card {
-  background:var(--ivory);
-  color:var(--black);
-  padding:25px;
-  min-height:270px;
-  display:flex;
-  flex-direction:column;
-}
-.journal-card .category { color:var(--burgundy); font-size:.66rem; font-weight:800; letter-spacing:.12em; }
-.journal-card h3 { font-family:var(--serif); font-size:1.65rem; line-height:1.2; margin:auto 0 14px; }
-.journal-card p { color:#6c655f; font-size:.86rem; }
-.journal-note { color:var(--muted); font-size:.8rem; margin-top:25px; }
-
-.contact { background:var(--burgundy); padding:80px 0; }
-.contact-inner { display:flex; align-items:center; justify-content:space-between; gap:35px; }
-.contact h2 { max-width:650px; }
-.contact p { max-width:540px; color:#ead9dc; margin-top:20px; }
-.contact .btn { background:var(--ivory); color:var(--burgundy); border-color:var(--ivory); white-space:nowrap; }
-
-footer { padding:25px 0; }
-.footer-inner {
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:15px;
-  color:var(--muted);
-  font-size:.74rem;
-}
-footer a { text-decoration:none; }
-footer a:hover { color:var(--rose); }
-
-@media(max-width:760px) {
-  .topbar .wrap { font-size:.58rem; }
-  nav { align-items:flex-start; flex-direction:column; padding:20px 0; }
-  .navlinks { gap:12px 18px; }
-  .language-switch { margin-left:0; }
-  .hero { grid-template-columns:1fr; padding:60px 0; }
-  .hero-visual { min-height:300px; }
-  .section { padding:65px 0; }
-  .section-head,.contact-inner { align-items:flex-start; flex-direction:column; }
-  .project-grid,.services-grid,.about-grid,.journal-grid { grid-template-columns:1fr; }
-  .project { padding:22px; }
-  .about-grid { gap:30px; }
-  .about-art { min-height:260px; }
-  .contact .btn { white-space:normal; }
-}
-@media(prefers-reduced-motion:reduce) {
-  html { scroll-behavior:auto; }
-  *,*::before,*::after { transition:none; }
-}
+/* Accessibility and readability refinements requested by Nadya */
+.asset-body h4{font-size:1.08rem;line-height:1.38;color:#fffaf3}
+.asset-body p{font-size:.94rem;line-height:1.6;color:#cfc7c1}
+.tag{font-size:.76rem;line-height:1.45;letter-spacing:.095em;font-weight:700;color:#e59aaa}
+.light .tag{color:#873247}
+.section-intro,.section-description{font-size:1rem;line-height:1.7}
+.asset-link{font-size:.88rem;line-height:1.5}
+.asset-card[hidden]{display:none!important}
+.audio-art small{font-size:.76rem;font-weight:700;color:#fff0f3}
+.audio-card .tag{color:#e59aaa}
+.audio-card .asset-body p{color:#cfc7c1}
+@media(max-width:700px){.asset-body h4{font-size:1.02rem}.asset-body p{font-size:.92rem}.tag{font-size:.72rem}}
 </style>
-</head>
+<style>
+/* Portfolio refresh: independent area pages, visible 16:9 artwork and illustrated section portraits */
+.section-portrait{width:100%;aspect-ratio:16/9;object-fit:contain;display:block;max-height:300px;background:#302c2d;border-bottom:1px solid rgba(245,240,232,.15)}
+.area-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:36px}
+.area-card{display:flex;flex-direction:column;text-decoration:none;border:1px solid rgba(245,240,232,.2);background:#282526;transition:transform .2s,border-color .2s;overflow:hidden;min-width:0}
+.area-card:hover{transform:translateY(-4px);border-color:var(--rose)}
+.area-card-copy{padding:22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.area-card .number{color:var(--rose);font-size:.7rem;letter-spacing:.16em}
+.area-card h3{margin:2px 0;font-size:1.55rem;line-height:1.15}
+.area-card p{margin:0;color:#c5bdb4;font-size:.9rem}
+.area-card .arrow{align-self:flex-end;color:var(--rose);font-size:1.3rem}
+.page-nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:22px 0 0}
+.page-nav a,.back-home{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border:1px solid var(--rose);text-decoration:none;font-weight:700;font-size:.82rem}
+.page-nav a:hover,.back-home:hover{background:var(--burgundy)}
+.area-banner{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(230px,.7fr);gap:30px;align-items:center;padding:38px 0 30px}
+.area-banner img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#302c2d}
+.asset-preview{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#ded5ca;cursor:zoom-in}
+.asset-card .asset-body{padding:16px;display:flex;flex-direction:column;gap:7px;flex:1}
+.asset-card h4{margin:0}.asset-card p{margin:0}
+.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.asset-link{align-self:flex-start;margin-top:auto}
+@media(max-width:720px){.area-cards{grid-template-columns:1fr}.area-banner{grid-template-columns:1fr}.asset-grid{grid-template-columns:1fr}.area-banner img{max-width:100%}}
+</style>
 
-<body>
-<div class="topbar">
-  <div class="wrap">
-    <span data-i18n="top-professional">Independent creative professional</span>
-    <span data-i18n="top-location">Spain · Remote worldwide</span>
-  </div>
-</div>
 
-<header>
-  <nav class="wrap" aria-label="Main navigation">
-    <a class="logo" href="#home">NADYA SACCHI<span>®</span></a>
-    <div class="navlinks">
-      <a href="#work" data-i18n="nav-work">Work</a>
-      <a href="#services" data-i18n="nav-services">Services</a>
-      <a href="#about" data-i18n="nav-about">About</a>
-      <a href="#journal" data-i18n="nav-journal">Journal</a>
-      <a class="nav-cta" href="#contact" data-i18n="nav-contact">Let's talk ↗</a>
-      <div class="language-switch" aria-label="Language selector"><button type="button" id="lang-en" aria-pressed="true">EN</button><span>|</span><button type="button" id="lang-es" aria-pressed="false">ES</button></div>
-    </div>
-  </nav>
-</header>
+<style id="visual-preview-fix">
+.asset-preview,.asset-preview.cover{width:100%;aspect-ratio:16/9;object-fit:contain;background:#e7ded2;display:block;max-height:none}
+.section-portrait{width:100%;aspect-ratio:16/9;object-fit:contain;object-position:center;display:block;max-height:300px}
+.about-photo{width:100%;aspect-ratio:4/5;object-fit:contain;object-position:center;max-height:480px;background:#e7ded2}
+.asset-card{min-width:0}
 
+/* Correcciones de presentación: imágenes completas y áreas con contraste */
+.area-banner{background:var(--burgundy)!important; border:1px solid rgba(199,122,138,.28); padding:clamp(28px,4vw,58px)!important; border-radius:2px; gap:clamp(24px,4vw,52px)!important}
+.area-banner>img{width:100%;height:clamp(250px,31vw,390px)!important;object-fit:contain!important;object-position:center!important;background:#302c2d;padding:8px;display:block}
+.section{padding-top:46px!important}
+.portfolio-section,.asset-gallery,.portfolio-section.light{background:#302c2d!important;color:var(--ivory)!important}
+.portfolio-section.light .section-intro,.light .section-intro{color:#e0d5d2!important}
+.asset-grid{align-items:stretch}
+.asset-card{background:#3a3537!important;overflow:hidden}
+.asset-preview{display:block;width:100%;height:clamp(220px,25vw,320px);object-fit:contain!important;object-position:center!important;background:#302c2d!important;padding:8px}
+.asset-card video.asset-preview{height:auto;min-height:220px;max-height:340px;object-fit:contain!important}
+.asset-card .asset-body{line-height:1.55}
+.topline-inner{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.topline-inner span:first-child{margin-right:12px}
+@media(max-width:720px){.area-banner{grid-template-columns:1fr!important}.area-banner>img{height:280px!important}.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:520px){.asset-grid{grid-template-columns:1fr!important}.topline-inner{gap:5px}}
+</style>
+
+</head><body>
+<div class="topline"><div class="wrap topline-inner"><span data-i18n="top-role">Independent creative professional</span><span data-i18n="top-location">Spain · Remote worldwide</span></div></div>
+<header><nav class="wrap" aria-label="Main navigation">
+<a class="logo" href="index.html">NADYA SACCHI<span>®</span></a>
+<div class="navlinks">
+<a href="index.html" data-i18n="nav-home">Home</a>
+<a href="writing.html" data-i18n="nav-writing">Writing</a><a href="voice.html" data-i18n="nav-voice">Voice Lab</a>
+<a href="translation.html" data-i18n="nav-translation">Translation</a><a href="admin.html" data-i18n="nav-admin">Admin &amp; Data</a>
+<a href="visual.html" data-i18n="nav-visual">Visual</a><a href="about.html" data-i18n="nav-about">About</a>
+<div class="language-switch" aria-label="Language selector"><button type="button" id="lang-en" aria-pressed="true">EN</button><span>|</span><button type="button" id="lang-es" aria-pressed="false">ES</button></div>
+</div></nav></header>
 <main>
-<section class="hero wrap" id="home">
-  <div>
-    <div class="kicker" data-i18n="hero-kicker">Creative Content, Language &amp; Administrative Support</div>
-    <h1 data-i18n="hero-title">WORDS<br><span class="outline">MAKE</span><br><em>an impact.</em></h1>
-    <p class="hero-copy" data-i18n="hero-copy">
-      I'm Nadya Sacchi, an Argentine creative professional based in Spain.
-      My work brings together storytelling, Spanish voice-over, language
-      services and thoughtful administrative support.
-    </p>
-    <div class="buttons">
-      <a class="btn primary" href="#work" data-i18n="hero-work">Explore my work ↗</a>
-      <a class="btn secondary" href="#contact" data-i18n="hero-talk">Start a conversation</a>
-    </div>
-  </div>
-  <aside class="hero-visual">
-    <div class="visual-index" data-i18n="visual-index">Portfolio / 2026</div>
-    <div class="visual-message" data-i18n="visual-message">Stories that stay.<br><em>Work with purpose.</em></div>
-    <div class="visual-bottom" data-i18n="visual-bottom">Creative mind. Careful execution.</div>
-  </aside>
-</section>
-
-<div class="marquee">
-  <div class="wrap marquee-inner">
-    <span data-i18n="marquee-writing">Creative writing</span><b>✳</b>
-    <span data-i18n="marquee-children">Children's stories</span><b>✳</b>
-    <span data-i18n="marquee-voice">Voice-over</span><b>✳</b>
-    <span data-i18n="marquee-translation">Translation &amp; editing</span><b>✳</b>
-    <span data-i18n="marquee-admin">Administrative support</span>
-  </div>
-</div>
-
-<section class="section light" id="work">
-<div class="wrap">
-  <div class="section-head">
-    <div><div class="kicker" data-i18n="work-kicker">01 / Selected work</div><h2 data-i18n="work-title">Different worlds.<br>One portfolio.</h2></div>
-    <p class="section-description" data-i18n="work-description">A selection of creative projects and professional skills, brought together in one place.</p>
-  </div>
-
-  <div class="project-grid">
-    <article class="project">
-      <div class="project-number" data-i18n="project-number1">01 / FICTION</div>
-      <img class="project-photo" src="escritura-edicion.png" alt="Nadya trabajando en escritura y edición" loading="lazy">
-      <div class="gallery-label" data-i18n="fiction-gallery">The fiction collection · Spanish &amp; English</div>
-      <div class="project-gallery">
-        <img class="gallery-image" src="fiction-spanish.png" alt="Spanish fiction collection covers" loading="lazy">
-        <img class="gallery-image" src="fiction-english.jpg" alt="English fiction collection covers" loading="lazy">
-      </div>
-      <h3 data-i18n="fiction-title">Stories that<br>stay with you.</h3>
-      <p data-i18n="fiction-description">Meet Stories That Leave a Mark: original fiction, suspense and interactive stories with two alternative endings. The reader chooses how each story ends.</p>
-
-      <div class="gallery-label" data-i18n="selected-es">Selected titles · Spanish</div>
-      <div class="cover-grid">
-        <div class="cover-item"><img src="crimson-shoes-es.png" alt="Los zapatos carmesí cover" loading="lazy"><span>Los zapatos carmesí</span></div>
-        <div class="cover-item"><img src="grupo-c-es.png" alt="El grupo C cover" loading="lazy"><span>El grupo C</span></div>
-        <div class="cover-item"><img src="vuelo-sombras-es.png" alt="El vuelo de las sombras cover" loading="lazy"><span>El vuelo de las sombras</span></div>
-      </div>
-
-      <div class="gallery-label" data-i18n="selected-en">Selected titles · English</div>
-      <div class="cover-grid">
-        <div class="cover-item"><img src="crimson-shoes-en.png" alt="The Crimson Shoes cover" loading="lazy"><span>The Crimson Shoes</span></div>
-        <div class="cover-item"><img src="group-c-en.png" alt="The Group C cover" loading="lazy"><span>The Group C</span></div>
-        <div class="cover-item"><img src="shadow-flight-en.png" alt="The Shadow Flight cover" loading="lazy"><span>The Shadow Flight</span></div>
-      </div>
-      <a class="project-link" href="https://github.com/nadyasacchi/fiction-writing-portfolio" target="_blank" rel="noopener noreferrer" data-i18n="fiction-link">Explore fiction portfolio ↗</a>
-    </article>
-
-    <article class="project">
-      <div class="project-number" data-i18n="project-number2">02 / CHILDREN\'S BOOKS</div>
-      <div class="gallery-label" data-i18n="children-gallery">Children's stories · Spanish &amp; English</div>
-      <div class="project-gallery">
-        <img class="gallery-image" src="children-spanish.jpg" alt="Spanish children's story collection covers" loading="lazy">
-        <img class="gallery-image" src="children-english.jpg" alt="English children's story collection covers" loading="lazy">
-      </div>
-      <h3 data-i18n="children-title">Little stories.<br>Big feelings.</h3>
-      <p data-i18n="children-description">Illustrated children\'s stories filled with imagination, kindness, friendship and meaningful discoveries, available in Spanish and English.</p>
-      <a class="project-link" href="https://github.com/nadyasacchi/childrens-stories-portfolio" target="_blank" rel="noopener noreferrer" data-i18n="children-link">Explore children\'s stories ↗</a>
-    </article>
-
-    <article class="project">
-      <div class="project-number" data-i18n="project-number3">03 / ADMIN &amp; DATA</div>
-      <img class="project-photo" src="asistencia-digital.png" alt="Nadya trabajando con herramientas digitales" loading="lazy">
-      <h3 data-i18n="admin-title">Clarity in<br>every detail.</h3>
-      <p data-i18n="admin-description">Structured information, data entry, spreadsheets and organised administrative work, with attention to consistency and accuracy.</p>
-      <a class="project-link" href="https://github.com/nadyasacchi/portfolio-Data-Entry" target="_blank" rel="noopener noreferrer" data-i18n="admin-link">View data portfolio ↗</a>
-    </article>
-
-    <article class="project">
-      <div class="project-number" data-i18n="project-number4">04 / LANGUAGE &amp; VOICE</div>
-      <img class="project-photo" src="retrato-locucion.png" alt="Nadya con auriculares y micrófono de estudio" loading="lazy">
-      <h3 data-i18n="language-title">Words that<br>connect.</h3>
-      <p data-i18n="language-description">Spanish voice-over and narration with an Argentine accent, English-to-Spanish translation, proofreading, localisation and text quality checks.</p>
-      <a class="project-link" href="https://canva.link/j7z9srbvglvpdxk" target="_blank" rel="noopener noreferrer" data-i18n="language-link">Explore voice and language samples ↗</a>
-    </article>
-  </div>
-</div>
-</section>
-
-<section class="section" id="services">
-<div class="wrap">
-  <div class="section-head">
-    <div><div class="kicker" data-i18n="services-kicker">02 / What I do</div><h2 data-i18n="services-title">Skills with<br>a human touch.</h2></div>
-    <p class="section-description" data-i18n="services-description">Different services, one consistent approach: care, clarity and attention to detail.</p>
-  </div>
-  <div class="services-grid">
-    <article class="service"><h3 data-i18n="service-writing-title">Creative Writing &amp; Storytelling</h3><p data-i18n="service-writing-description">Original fiction, children\'s stories, suspense narratives and written content.</p></article>
-    <article class="service"><h3 data-i18n="service-voice-title">Voice-over &amp; Narration</h3><p data-i18n="service-voice-description">Spanish-language narration with a natural Argentine accent.</p></article>
-    <article class="service"><h3 data-i18n="service-translation-title">Translation &amp; Editing</h3><p data-i18n="service-translation-description">English-to-Spanish translation, proofreading, localisation and text quality checks.</p></article>
-    <article class="service"><h3 data-i18n="service-admin-title">Administrative Support</h3><p data-i18n="service-admin-description">Data entry, document organisation, spreadsheets and virtual assistance.</p></article>
-  </div>
-</div>
-</section>
-
-<section class="section light" id="about">
-<div class="wrap about-grid">
-  <div>
-    <img class="about-photo" src="retrato-locucion.png" alt="Nadya Sacchi, locutora y profesional creativa" loading="lazy">
-    <video class="personal-video" controls preload="metadata" playsinline>
-      <source src="presentacion-personal.mp4" type="video/mp4">
-      Your browser does not support HTML video.
-    </video>
-    <p class="video-caption" data-i18n="video-caption">My personal introduction · English and Spanish</p>
-  </div>
-  <div class="about-copy">
-    <div class="kicker" data-i18n="about-kicker">03 / About me</div>
-    <h2 data-i18n="about-title">Curious by nature.<br>Careful by choice.</h2>
-    <p data-i18n="about-p1">I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work combines storytelling, language, communication and organisation.</p>
-    <p data-i18n="about-p2">From developing original stories to refining written content and organising information, I value thoughtful work, clear structure and attention to detail.</p>
-    <p data-i18n="about-p3">This portfolio brings together my projects and professional services, creating a starting point for new collaborations.</p>
-    <a class="btn secondary" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer" data-i18n="github-link">Find me on GitHub ↗</a>
-  </div>
-</div>
-</section>
-
-<section class="section" id="journal">
-<div class="wrap">
-  <div class="section-head">
-    <div><div class="kicker" data-i18n="journal-kicker">04 / Notes &amp; ideas</div><h2 data-i18n="journal-title">The Journal.</h2></div>
-    <p class="section-description" data-i18n="journal-description">Creative reflections, practical insights and notes from behind the scenes.</p>
-  </div>
-  <div class="journal-grid">
-    <article class="journal-card"><div class="category" data-i18n="journal-cat1">WRITING &amp; CREATIVITY</div><h3 data-i18n="journal-title1">Where a story begins</h3><p data-i18n="journal-p1">How a simple idea can grow into a character, a dilemma and a world worth exploring.</p></article>
-    <article class="journal-card"><div class="category" data-i18n="journal-cat2">LANGUAGE &amp; DETAIL</div><h3 data-i18n="journal-title2">The art of a careful edit</h3><p data-i18n="journal-p2">Why clear writing depends on meaning, rhythm, consistency and the reader\'s experience.</p></article>
-    <article class="journal-card"><div class="category" data-i18n="journal-cat3">BEHIND THE WORK</div><h3 data-i18n="journal-title3">From first draft to final version</h3><p data-i18n="journal-p3">A look at the small decisions and revisions that shape a finished project.</p></article>
-  </div>
-  <p class="journal-note" data-i18n="journal-note">The Journal is currently a design preview. Individual articles and a dedicated blog archive can be added later.</p>
-</div>
-</section>
-
-<section class="contact" id="contact">
-<div class="wrap contact-inner">
-  <div>
-    <div class="kicker" data-i18n="contact-kicker">05 / New projects</div>
-    <h2 data-i18n="contact-title">Let\'s make<br>something meaningful.</h2>
-    <p data-i18n="contact-description">Have a project in mind? Get in touch to discuss creative writing, language services, Spanish narration or administrative support.</p>
-  </div>
-  <a class="btn" href="https://github.com/nadyasacchi" target="_blank" rel="noopener noreferrer" data-i18n="contact-link">Contact &amp; professional profile ↗</a>
-</div>
-</section>
+<section class="hero wrap" id="home"><div>
+<div class="kicker" data-i18n="hero-kicker">Creative content, languages &amp; administrative support</div>
+<h1 data-i18n="hero-title">Words that<br><em>leave a mark.</em></h1>
+<p class="hero-copy" data-i18n="hero-description">I’m Nadya Sacchi, an Argentine creative professional based in Spain. I bring together storytelling, voice-over, translation, editing, design and administrative support.</p>
+<div class="hero-actions"><a class="btn primary" href="#areas" data-i18n="hero-button">Explore my work ↓</a></div>
+</div><aside class="hero-visual"><img src="01_HOME/cover_portfolio.png" alt="" onerror="this.style.display='none'"><div class="visual-index" data-i18n="visual-index">Portfolio / 2026</div><div class="visual-message" data-i18n="visual-message">Stories that stay.<br><em>Work with purpose.</em></div><div class="visual-bottom" data-i18n="visual-bottom">Creative mind. Careful execution.</div></aside></section>
+<section class="section" id="areas"><div class="wrap"><div class="section-head"><div><div class="kicker" data-i18n="work-kicker">Explore the portfolio</div><h2 data-i18n="work-title">Choose an area.<br>Explore the work.</h2></div><p class="section-description" data-i18n="work-description">Each area opens its own page, with a short introduction and visual samples you can browse directly.</p></div><div class="area-cards"><a class="area-card" href="writing.html"><img class="section-portrait" src="02_WRITING_AND_CONTENT/portrait_writing_content.jpg" alt="Escritura y contenido" loading="lazy" onerror="tryAssetExt(this, '02_WRITING_AND_CONTENT/portrait_writing_content')"><div class="area-card-copy"><span class="number">01 / 06</span><h3 data-i18n="area-writing">Writing & Content</h3><p data-i18n="area-writing-p">Fiction, reflective writing and editorial content.</p><span class="arrow">↗</span></div></a><a class="area-card" href="voice.html"><img class="section-portrait" src="03_VOICE_LAB/portrait_voice_lab.jpg" alt="Laboratorio de voz" loading="lazy" onerror="tryAssetExt(this, '03_VOICE_LAB/portrait_voice_lab')"><div class="area-card-copy"><span class="number">02 / 06</span><h3 data-i18n="area-voice">Voice Lab</h3><p data-i18n="area-voice-p">Children’s narration, Argentine Spanish and voice samples.</p><span class="arrow">↗</span></div></a><a class="area-card" href="translation.html"><img class="section-portrait" src="04_TRANSLATION_AND_EDITING/portrait_translation_editing.jpg" alt="Traducción y edición" loading="lazy" onerror="tryAssetExt(this, '04_TRANSLATION_AND_EDITING/portrait_translation_on_editing')"><div class="area-card-copy"><span class="number">03 / 06</span><h3 data-i18n="area-translation">Translation & Editing</h3><p data-i18n="area-translation-p">Translation, proofreading, localisation and quality review.</p><span class="arrow">↗</span></div></a><a class="area-card" href="admin.html"><img class="section-portrait" src="05_ADMIN_AND_DATA/portrait_administrative_assistance.jpg" alt="Administración y datos" loading="lazy" onerror="tryAssetExt(this, '05_ADMIN_AND_DATA/portrait_administrative_assistance')"><div class="area-card-copy"><span class="number">04 / 06</span><h3 data-i18n="area-admin">Admin & Data</h3><p data-i18n="area-admin-p">Document management, reporting and customer experience.</p><span class="arrow">↗</span></div></a><a class="area-card" href="visual.html"><img class="section-portrait" src="06_VISUAL_PLAYGROUND/portrait_visual_content.jpg" alt="Diseño visual" loading="lazy" onerror="tryAssetExt(this, '06_VISUAL_PLAYGROUND/portrait_visual_content')"><div class="area-card-copy"><span class="number">05 / 06</span><h3 data-i18n="area-visual">Visual Playground</h3><p data-i18n="area-visual-p">Graphic design, editorial layout and video editing.</p><span class="arrow">↗</span></div></a><a class="area-card" href="services.html"><img class="section-portrait" src="05_ADMIN_AND_DATA/portrait_administrative_assistance.jpg" alt="Services" loading="lazy" onerror="tryAssetExt(this,'05_ADMIN_AND_DATA/portrait_administrative_assistance')"><div class="area-card-copy"><span class="number">07 / 07</span><h3 data-i18n="area-services">Services</h3><p data-i18n="area-services-p">Ways I can support your next project.</p><span class="arrow">↗</span></div></a><a class="area-card" href="about.html"><img class="section-portrait" src="07_ABOUT_ME/retrato_about.jpg" alt="Sobre mí" loading="lazy" onerror="tryAssetExt(this, '07_ABOUT_ME/retrato_about')"><div class="area-card-copy"><span class="number">06 / 06</span><h3 data-i18n="area-about">About Me</h3><p data-i18n="area-about-p">My creative profile, professional journey and portrait.</p><span class="arrow">↗</span></div></a></div></div></section>
 </main>
-
-<footer>
-<div class="wrap footer-inner">
-  <span data-i18n="footer-copyright">© 2026 Nadya Sacchi. All rights reserved.</span>
-  <span><a href="#home" data-i18n="footer-top">Back to top ↑</a></span>
-</div>
-</footer>
-
+<footer><div class="wrap footer-inner"><span>© 2026 Nadya Sacchi</span><a href="index.html" data-i18n="footer-top">Back to home ↑</a></div></footer>
 <script>
-const translations = {
-  en: {
-    'meta-description': "Nadya Sacchi: content writer and editor, English-to-Spanish translator, voice-over artist, graphic designer and virtual assistant.",
-    'page-title': 'Nadya Sacchi — Creative Content, Language & Administrative Support',
-    'top-professional':'Independent creative professional','top-location':'Spain · Remote worldwide',
-    'nav-work':'Work','nav-services':'Services','nav-about':'About','nav-journal':'Journal','nav-contact':"Let's talk ↗",
-    'hero-kicker':'Creative Content, Language &amp; Administrative Support','hero-title':'WORDS<br><span class="outline">MAKE</span><br><em>an impact.</em>','project-number1':'01 / FICTION','project-number2':'02 / CHILDREN\'S BOOKS','project-number3':'03 / ADMIN &amp; DATA','project-number4':'04 / LANGUAGE &amp; VOICE',
-    'hero-copy':"I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work brings together storytelling, Spanish voice-over, English-to-Spanish translation, content writing and editing, graphic design and reliable administrative support.",
-    'hero-work':'Explore my work ↗','hero-talk':'Start a conversation','visual-index':'Portfolio / 2026','visual-message':'Stories that stay.<br><em>Work with purpose.</em>','visual-bottom':'Creative mind. Careful execution.',
-    'marquee-writing':'Creative writing','marquee-children':"Children's stories",'marquee-voice':'Voice-over','marquee-translation':'Translation &amp; editing','marquee-admin':'Administrative support',
-    'work-kicker':'01 / Selected work','work-title':'Different worlds.<br>One portfolio.','work-description':'A selection of creative projects and professional skills, brought together in one place.',
-    'fiction-gallery':'The fiction collection · Spanish &amp; English','fiction-title':'Stories that<br>stay with you.','fiction-description':'Meet Stories That Leave a Mark: original fiction, suspense and interactive stories with two alternative endings. The reader chooses how each story ends.','selected-es':'Selected titles · Spanish','selected-en':'Selected titles · English','fiction-link':'Explore fiction portfolio ↗',
-    'children-gallery':"Children's stories · Spanish &amp; English",'children-title':'Little stories.<br>Big feelings.','children-description':"Illustrated children\'s stories filled with imagination, kindness, friendship and meaningful discoveries, available in Spanish and English.",'children-link':"Explore children\'s stories ↗",'admin-title':'Clarity in<br>every detail.','admin-description':'Structured information, data entry, spreadsheets and organised administrative work, with attention to consistency and accuracy.','admin-link':'View data portfolio ↗','language-title':'Words that<br>connect.','language-description':'Spanish voice-over and narration with an Argentine accent, English-to-Spanish translation, proofreading, localisation and text quality checks.','language-link':'Explore voice and language samples ↗',
-    'services-kicker':'02 / What I do','services-title':'Skills with<br>a human touch.','services-description':'Different services, one consistent approach: care, clarity and attention to detail.','service-writing-title':'Creative Writing &amp; Storytelling','service-writing-description':"Original fiction, children\'s stories, suspense narratives and written content.",'service-voice-title':'Voice-over &amp; Narration','service-voice-description':'Spanish-language narration with a natural Argentine accent.','service-translation-title':'Translation &amp; Editing','service-translation-description':'English-to-Spanish translation, proofreading, localisation and text quality checks.','service-admin-title':'Administrative Support','service-admin-description':'Data entry, document organisation, spreadsheets and virtual assistance.',
-    'about-art-kicker':'A personal approach','about-art-title':'Ideas.<br>Words.<br><em>Meaning.</em>','about-art-bottom':'Nadya Sacchi · Creative portfolio','about-kicker':'03 / About me','about-title':'Curious by nature.<br>Careful by choice.','about-p1':"I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work combines storytelling, language, communication and organisation.",'about-p2':'From developing original stories to refining written content and organising information, I value thoughtful work, clear structure and attention to detail.','about-p3':'This portfolio brings together my projects and professional services, creating a starting point for new collaborations.','github-link':'Find me on GitHub ↗','video-caption':'My personal introduction · English and Spanish',
-    'journal-kicker':'04 / Notes &amp; ideas','journal-title':'The Journal.','journal-description':'Creative reflections, practical insights and notes from behind the scenes.','journal-cat1':'WRITING &amp; CREATIVITY','journal-title1':'Where a story begins','journal-p1':'How a simple idea can grow into a character, a dilemma and a world worth exploring.','journal-cat2':'LANGUAGE &amp; DETAIL','journal-title2':'The art of a careful edit','journal-p2':"Why clear writing depends on meaning, rhythm, consistency and the reader\'s experience.",'journal-cat3':'BEHIND THE WORK','journal-title3':'From first draft to final version','journal-p3':'A look at the small decisions and revisions that shape a finished project.','journal-note':'The Journal is currently a design preview. Individual articles and a dedicated blog archive can be added later.',
-    'contact-kicker':'05 / New projects','contact-title':"Let\'s make<br>something meaningful.",'contact-description':'Have a project in mind? Get in touch to discuss creative writing, language services, Spanish narration or administrative support.','contact-link':'Contact &amp; professional profile ↗','footer-copyright':'© 2026 Nadya Sacchi. All rights reserved.','footer-top':'Back to top ↑'
-  },
-  es: {
-    'meta-description':'Nadya Sacchi: redactora y editora de contenidos, traductora de inglés a español, locutora, diseñadora gráfica y asistente virtual.',
-    'page-title':'Nadya Sacchi — Contenido creativo, idiomas y asistencia administrativa',
-    'top-professional':'Profesional creativa independiente','top-location':'España · Trabajo remoto internacional',
-    'nav-work':'Trabajos','nav-services':'Servicios','nav-about':'Sobre mí','nav-journal':'Blog','nav-contact':'Hablemos ↗',
-    'hero-kicker':'Contenido creativo, idiomas y asistencia administrativa','hero-title':'PALABRAS<br><span class="outline">QUE</span><br><em>dejan huella.</em>','project-number1':'01 / FICCIÓN','project-number2':'02 / CUENTOS INFANTILES','project-number3':'03 / ADMINISTRACIÓN Y DATOS','project-number4':'04 / IDIOMAS Y VOZ',
-    'hero-copy':'Soy Nadya Sacchi, profesional creativa argentina residente en España. Mi trabajo combina narrativa, locución en español, traducción del inglés al español, redacción y edición de contenidos, diseño gráfico y asistencia administrativa.',
-    'hero-work':'Ver mis trabajos ↗','hero-talk':'Hablemos de tu proyecto','visual-index':'Portfolio / 2026','visual-message':'Historias que perduran.<br><em>Trabajo con propósito.</em>','visual-bottom':'Creatividad y atención al detalle.',
-    'marquee-writing':'Escritura creativa','marquee-children':'Cuentos infantiles','marquee-voice':'Locución','marquee-translation':'Traducción y edición','marquee-admin':'Asistencia administrativa',
-    'work-kicker':'01 / Trabajos seleccionados','work-title':'Mundos diferentes.<br>Un solo portfolio.','work-description':'Una selección de proyectos creativos y habilidades profesionales reunidos en un mismo lugar.',
-    'fiction-gallery':'Colección de ficción · Español e inglés','fiction-title':'Historias que<br>dejan huella.','fiction-description':'Conocé Stories That Leave a Mark: relatos originales de ficción y suspense con dos finales alternativos. El lector elige cómo termina cada historia.','selected-es':'Títulos seleccionados · Español','selected-en':'Títulos seleccionados · Inglés','fiction-link':'Ver portfolio de ficción ↗',
-    'children-gallery':'Cuentos infantiles · Español e inglés','children-title':'Historias pequeñas.<br>Grandes emociones.','children-description':'Cuentos infantiles ilustrados llenos de imaginación, amabilidad, amistad y descubrimientos significativos, disponibles en español e inglés.','children-link':'Ver cuentos infantiles ↗','admin-title':'Claridad en<br>cada detalle.','admin-description':'Organización de información, entrada de datos, hojas de cálculo y tareas administrativas, con atención a la coherencia y la precisión.','admin-link':'Ver portfolio de datos ↗','language-title':'Palabras que<br>conectan.','language-description':'Locución y narración en español con acento argentino, traducción del inglés al español, corrección, adaptación lingüística y control de calidad de textos.','language-link':'Ver muestras de voz e idiomas ↗',
-    'services-kicker':'02 / Qué hago','services-title':'Profesionalidad<br>con un toque humano.','services-description':'Servicios diferentes con una misma forma de trabajar: cuidado, claridad y atención al detalle.','service-writing-title':'Escritura creativa y narrativa','service-writing-description':'Ficción original, cuentos infantiles, relatos de suspense y redacción de contenidos.','service-voice-title':'Locución y narración','service-voice-description':'Narración en español con acento argentino natural.','service-translation-title':'Traducción y edición','service-translation-description':'Traducción del inglés al español, corrección, adaptación lingüística y control de calidad de textos.','service-admin-title':'Asistencia administrativa','service-admin-description':'Entrada de datos, organización de documentos, hojas de cálculo y asistencia virtual.',
-    'about-art-kicker':'Una forma personal de trabajar','about-art-title':'Ideas.<br>Palabras.<br><em>Sentido.</em>','about-art-bottom':'Nadya Sacchi · Portfolio creativo','about-kicker':'03 / Sobre mí','about-title':'Curiosa por naturaleza.<br>Cuidadosa por elección.','about-p1':'Soy Nadya Sacchi, profesional creativa argentina residente en España. Mi trabajo combina narrativa, idiomas, comunicación y organización.','about-p2':'Desde desarrollar historias originales hasta revisar textos y organizar información, valoro el trabajo cuidado, la estructura clara y la atención al detalle.','about-p3':'Este portfolio reúne mis proyectos y servicios profesionales y sirve como punto de partida para nuevas colaboraciones.','github-link':'Encontrame en GitHub ↗','video-caption':'Mi presentación personal · Inglés y español',
-    'journal-kicker':'04 / Notas e ideas','journal-title':'El blog.','journal-description':'Reflexiones creativas, ideas prácticas y notas sobre el proceso de trabajo.','journal-cat1':'ESCRITURA Y CREATIVIDAD','journal-title1':'Dónde empieza una historia','journal-p1':'Cómo una idea sencilla puede convertirse en un personaje, un dilema y un mundo por descubrir.','journal-cat2':'IDIOMAS Y DETALLES','journal-title2':'El arte de corregir con cuidado','journal-p2':'Por qué una escritura clara depende del significado, el ritmo, la coherencia y la experiencia del lector.','journal-cat3':'DETRÁS DEL TRABAJO','journal-title3':'Del primer borrador a la versión final','journal-p3':'Una mirada a las pequeñas decisiones y revisiones que dan forma a un proyecto terminado.','journal-note':'Esta sección es actualmente una vista previa del diseño. Más adelante se pueden añadir artículos y un archivo de blog.',
-    'contact-kicker':'05 / Nuevos proyectos','contact-title':'Creemos algo<br>que tenga sentido.','contact-description':'¿Tenés un proyecto en mente? Escribime para conversar sobre escritura creativa, servicios lingüísticos, narración en español o asistencia administrativa.','contact-link':'Contacto y perfil profesional ↗','footer-copyright':'© 2026 Nadya Sacchi. Todos los derechos reservados.','footer-top':'Volver al inicio ↑'
-  }
-};
-function setLanguage(lang) {
-  const dict = translations[lang] || translations.en;
-  if (!document.getElementById('lang-en') || !document.getElementById('lang-es')) return;
-  document.documentElement.lang = lang;
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const value = dict[el.dataset.i18n];
-    if (value !== undefined) el.innerHTML = value;
-  });
-  document.getElementById('page-title').textContent = dict['page-title'];
-  document.getElementById('meta-description').setAttribute('content', dict['meta-description']);
-  document.getElementById('lang-en').setAttribute('aria-pressed', String(lang === 'en'));
-  document.getElementById('lang-es').setAttribute('aria-pressed', String(lang === 'es'));
-  try { localStorage.setItem('nadyaPortfolioLanguage', lang); } catch(e) {}
-}
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('lang-en')?.addEventListener('click', () => setLanguage('en'));
-  document.getElementById('lang-es')?.addEventListener('click', () => setLanguage('es'));
-});
-let savedLanguage = 'en';
-try { savedLanguage = localStorage.getItem('nadyaPortfolioLanguage') || 'en'; } catch(e) {}
-setLanguage(savedLanguage);
-</script>
+const translations={
+en:{
+'meta-description':"Nadya Sacchi: creative writer, editor, Argentine Spanish voice-over artist, English-to-Spanish translator, graphic designer and virtual assistant.",
+'page-title':'Nadya Sacchi — Creative, Language & Administrative Portfolio',
+'top-professional':'Independent creative professional','top-location':'Spain · Remote worldwide',
+'nav-writing':'Writing','nav-voice':'Voice Lab','nav-translation':'Translation','nav-admin':'Admin & Data','nav-visual':'Visual','nav-about':'About',
+'hero-kicker':'Creative Content, Language &amp; Administrative Support','hero-title':'WORDS<br><span class="outline">MAKE</span><br><em>an impact.</em>','hero-copy':"I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work brings together storytelling, Spanish voice-over, translation, editing, design and administrative support.",'hero-work':'Explore my work ↗','hero-talk':'Start a conversation','visual-index':'Portfolio / 2026','visual-message':'Stories that stay.<br><em>Work with purpose.</em>','visual-bottom':'Creative mind. Careful execution.',
+'marquee-writing':'Writing &amp; storytelling','marquee-voice':'Voice-over','marquee-translation':'Translation &amp; editing','marquee-admin':'Administrative support','marquee-visual':'Visual design',
+'work-kicker':'Explore the portfolio','work-title':'Seven areas.<br>One creative practice.','work-description':'Explore my writing, voice, language, administrative and visual projects in the sections below.',
+'card-writing':'Writing &amp; Content','card-writing-p':'Fiction, reflective writing and editorial content.','card-voice':'Voice Lab','card-voice-p':'Narration, Argentine Spanish and voice samples.','card-translation':'Translation &amp; Editing','card-translation-p':'Translation, proofreading, localisation and QC.','card-admin':'Admin &amp; Data','card-admin-p':'Organisation, reporting and customer experience.','card-visual':'Visual Playground','card-visual-p':'Graphic design, editorial layout and video.','card-about':'About Me','card-about-p':'Personal introduction and portrait.','card-services':'Services','card-services-p':'Ways I can support your next project.',
+'writing-kicker':'01 / Writing and content','writing-title':'Stories, ideas<br>&amp; clear content.','writing-description':'Original fiction, personal reflections and editorial content in Spanish and English.','writing-intro':'The work ranges from suspense and children’s storytelling to reflective writing and travel-editorial samples. Select a sample to open it in a new tab.','fiction-subheading':'Fiction &amp; storytelling','sample-open':'Writing sample. Select to view.','open-sample':'Open sample ↗','open-file':'Open file ↗','children-sample':"Children's storytelling sample.",'reflection-subheading':'Personal &amp; reflective writing','reflection-p':'Personal and reflective writing sample.','editorial-subheading':'Content &amp; editorial writing',
+'voice-kicker':'02 / Voice Lab','voice-title':'A voice with<br>character.','voice-description':'Voice-over and narration samples, including Spanish with a natural Argentine accent.','audio-note':'Audio sample. Use the linked file to listen.','listen-sample':'Listen to sample ↗','voice-file-note':'The audio links use .mp3 as the assumed extension. If your audio files use another extension, update only the extension in each link.',
+'translation-kicker':'03 / Translation and editing','translation-title':'Meaning matters.<br>So does detail.','translation-description':'English-to-Spanish translation, localisation, proofreading and text quality checks.','bilingual-p':'A bilingual writing and translation sample.','open-pdf':'Open PDF ↗','vintage-p':'Preview image with a link to the corresponding document.','proofreading-p':'A visual example of grammar and editing corrections.','localization-p':'Natural, context-aware editorial adaptation.','video-sample-p':'A video sample demonstrating language adaptation.',
+'admin-kicker':'04 / Admin and data','admin-title':'Organised information.<br>Reliable support.','admin-description':'Administrative assistance, document management, data entry, reporting and customer experience.','admin-assist-sub':'Administrative assistance','admin-card-p':'A structured example of tracking and organising work.','data-sub':'Data entry &amp; reporting','report-p':'A sample report focused on structured data and clear presentation.','customer-sub':'Customer service &amp; experience','mystery-p':'An example of evaluating service and customer experience.',
+'visual-kicker':'05 / Visual Playground','visual-title':'Visual stories.<br>Thoughtful design.','visual-description':'Graphic design, editorial layout and video editing projects.','design-sub':'Graphic design','layout-sub':'Editorial layout','video-sub':'Video editing','watch-video':'Watch video ↗',
+'video-caption':'My personal introduction.','about-kicker':'06 / About me','about-title':'Curious by nature.<br>Careful by choice.','about-p1':"I'm Nadya Sacchi, an Argentine creative professional based in Spain. My work combines storytelling, language, communication and organisation.",'about-p2':'From developing original stories to refining written content and organising information, I value thoughtful work, clear structure and attention to detail.','about-p3':'This portfolio brings together my projects and professional services, creating a starting point for new collaborations.',
+'services-kicker':'07 / Services','services-title':'Skills with<br>a human touch.','services-description':'Different services, one consistent approach: care, clarity and attention to detail.','service-writing-title':'Writing &amp; content','service-writing-p':'Creative writing, fiction, editorial content and proofreading.','service-voice-title':'Voice-over &amp; narration','service-voice-p':'Spanish narration with a natural Argentine accent.','service-translation-title':'Translation &amp; editing','service-translation-p':'English-to-Spanish translation, localisation, proofreading and quality checks.','service-admin-title':'Administrative assistance','service-admin-p':'Data entry, reporting, document management and virtual assistance.','service-visual-title':'Graphic &amp; editorial design','service-visual-p':'Visual communication, editorial layouts and video editing.','service-customer-title':'Customer experience','service-customer-p':'Customer service workflows, information continuity and mystery shopping.',
+'footer-copyright':'© 2026 Nadya Sacchi. All rights reserved.','footer-top':'Back to top ↑'
+},
+es:{
+'meta-description':'Nadya Sacchi: escritora y editora de contenidos, locutora en español argentino, traductora de inglés a español, diseñadora gráfica y asistente virtual.',
+'page-title':'Nadya Sacchi — Portfolio creativo, lingüístico y administrativo',
+'top-professional':'Profesional creativa independiente','top-location':'España · Trabajo remoto internacional',
+'nav-writing':'Escritura','nav-voice':'Voz','nav-translation':'Traducción','nav-admin':'Administración','nav-visual':'Diseño','nav-about':'Sobre mí',
+'hero-kicker':'Contenido creativo, idiomas y asistencia administrativa','hero-title':'PALABRAS<br><span class="outline">QUE</span><br><em>dejan huella.</em>','hero-copy':'Soy Nadya Sacchi, profesional creativa argentina residente en España. Mi trabajo combina narrativa, locución en español, traducción, edición, diseño y asistencia administrativa.','hero-work':'Ver mis trabajos ↗','hero-talk':'Hablemos de tu proyecto','visual-index':'Portfolio / 2026','visual-message':'<span class="hero-es-message">Historias que perduran.<br><em>Trabajo con propósito.</em></span>','visual-bottom':'Creatividad y atención al detalle.',
+'marquee-writing':'Escritura y narrativa','marquee-voice':'Locución','marquee-translation':'Traducción y edición','marquee-admin':'Asistencia administrativa','marquee-visual':'Diseño visual',
+'work-kicker':'Explorá el portfolio','work-title':'Siete áreas.<br>Una misma mirada creativa.','work-description':'Explorá mis proyectos de escritura, voz, idiomas, administración y diseño en las siguientes secciones.',
+'card-writing':'Escritura y contenidos','card-writing-p':'Ficción, escritura reflexiva y contenidos editoriales.','card-voice':'Voice Lab','card-voice-p':'Narración, español argentino y muestras de voz.','card-translation':'Traducción y edición','card-translation-p':'Traducción, corrección, adaptación y control de calidad.','card-admin':'Administración y datos','card-admin-p':'Organización, informes y experiencia del cliente.','card-visual':'Visual Playground','card-visual-p':'Diseño gráfico, maquetación editorial y video.','card-about':'Sobre mí','card-about-p':'Presentación personal y retrato.','card-services':'Servicios','card-services-p':'Cómo puedo ayudarte en tu próximo proyecto.',
+'writing-kicker':'01 / Escritura y contenidos','writing-title':'Historias, ideas<br>y contenidos claros.','writing-description':'Ficción original, reflexiones personales y contenidos editoriales en español e inglés.','writing-intro':'Mis trabajos abarcan relatos de suspense y cuentos infantiles, escritura reflexiva y muestras editoriales de viajes. Seleccioná una muestra para abrirla en otra pestaña.','fiction-subheading':'Ficción y narrativa','sample-open':'Muestra de escritura. Seleccioná para verla.','open-sample':'Abrir muestra ↗','open-file':'Abrir archivo ↗','children-sample':'Muestra de narrativa infantil.','reflection-subheading':'Escritura personal y reflexiva','reflection-p':'Muestra de escritura personal y reflexiva.','editorial-subheading':'Redacción de contenidos y editorial',
+'voice-kicker':'02 / Voice Lab','voice-title':'Una voz con<br>personalidad.','voice-description':'Muestras de locución y narración, incluido español con acento argentino natural.','audio-note':'Muestra de audio. Usá el enlace para escucharla.','listen-sample':'Escuchar muestra ↗','voice-file-note':'Los enlaces de audio suponen la extensión .mp3. Si tus archivos tienen otra extensión, cambiá únicamente la extensión de cada enlace.',
+'translation-kicker':'03 / Traducción y edición','translation-title':'El sentido importa.<br>También los detalles.','translation-description':'Traducción del inglés al español, adaptación lingüística, corrección y control de calidad de textos.','bilingual-p':'Muestra bilingüe de escritura y traducción.','open-pdf':'Abrir PDF ↗','vintage-p':'Imagen de muestra con enlace al documento correspondiente.','proofreading-p':'Ejemplo visual de correcciones gramaticales y de edición.','localization-p':'Adaptación editorial natural y contextualizada.','video-sample-p':'Muestra en video de adaptación lingüística.',
+'admin-kicker':'04 / Administración y datos','admin-title':'Información organizada.<br>Apoyo confiable.','admin-description':'Asistencia administrativa, gestión documental, entrada de datos, informes y experiencia del cliente.','admin-assist-sub':'Asistencia administrativa','admin-card-p':'Ejemplo estructurado de seguimiento y organización del trabajo.','data-sub':'Entrada de datos e informes','report-p':'Informe de muestra centrado en datos estructurados y una presentación clara.','customer-sub':'Atención al cliente y experiencia','mystery-p':'Ejemplo de evaluación del servicio y la experiencia del cliente.',
+'visual-kicker':'05 / Visual Playground','visual-title':'Historias visuales.<br>Diseño con intención.','visual-description':'Proyectos de diseño gráfico, maquetación editorial y edición de video.','design-sub':'Diseño gráfico','layout-sub':'Maquetación editorial','video-sub':'Edición de video','watch-video':'Ver video ↗',
+'video-caption':'Mi presentación personal.','about-kicker':'06 / Sobre mí','about-title':'Curiosa por naturaleza.<br>Cuidadosa por elección.','about-p1':'Soy Nadya Sacchi, profesional creativa argentina residente en España. Mi trabajo combina narrativa, idiomas, comunicación y organización.','about-p2':'Desde desarrollar historias originales hasta revisar textos y organizar información, valoro el trabajo cuidado, la estructura clara y la atención al detalle.','about-p3':'Este portfolio reúne mis proyectos y servicios profesionales y sirve como punto de partida para nuevas colaboraciones.',
+'services-kicker':'07 / Servicios','services-title':'Profesionalidad<br>con un toque humano.','services-description':'Servicios diferentes con una misma forma de trabajar: cuidado, claridad y atención al detalle.','service-writing-title':'Escritura y contenidos','service-writing-p':'Escritura creativa, ficción, contenidos editoriales y corrección.','service-voice-title':'Locución y narración','service-voice-p':'Narración en español con acento argentino natural.','service-translation-title':'Traducción y edición','service-translation-p':'Traducción del inglés al español, adaptación, corrección y control de calidad.','service-admin-title':'Asistencia administrativa','service-admin-p':'Entrada de datos, informes, gestión documental y asistencia virtual.','service-visual-title':'Diseño gráfico y editorial','service-visual-p':'Comunicación visual, maquetación editorial y edición de video.','service-customer-title':'Experiencia del cliente','service-customer-p':'Flujos de atención al cliente, continuidad de información y mystery shopping.',
+'footer-copyright':'© 2026 Nadya Sacchi. Todos los derechos reservados.','footer-top':'Volver al inicio ↑'
+}};
 
-</body>
-</html>
+Object.assign(translations.en, {
+'nav-home':'Home','hero-kicker':'Creative content, languages & administrative support',
+'hero-title':'Words that<br><em>leave a mark.</em>',
+'hero-description':'I’m Nadya Sacchi, an Argentine creative professional based in Spain. I bring together storytelling, voice-over, translation, editing, design and administrative support.',
+'hero-button':'Explore my work ↓','work-kicker':'Explore the portfolio','work-title':'Choose an area.<br>Explore the work.',
+'work-description':'Each area opens its own page, with a short introduction and visual samples you can browse directly.',
+'area-writing':'Writing & Content','area-writing-p':'Fiction, reflective writing and editorial content.',
+'area-voice':'Voice Lab','area-voice-p':'Children’s narration, Argentine Spanish and voice samples.',
+'area-translation':'Translation & Editing','area-translation-p':'Translation, proofreading, localisation and quality review.',
+'area-admin':'Admin & Data','area-admin-p':'Document management, reporting and customer experience.',
+'area-visual':'Visual Playground','area-visual-p':'Graphic design, editorial layout and video editing.',
+'area-about':'About Me','area-about-p':'My creative profile, professional journey and portrait.',
+'area-services':'Services','area-services-p':'Ways I can support your next project.'
+});
+Object.assign(translations.es, {
+'nav-home':'Inicio','hero-kicker':'Contenido creativo, idiomas y asistencia administrativa',
+'hero-title':'Palabras que<br><em>dejan huella.</em>',
+'hero-description':'Soy Nadya Sacchi, profesional creativa argentina residente en España. Combino narrativa, locución, traducción, edición, diseño y asistencia administrativa.',
+'hero-button':'Explorar mi trabajo ↓','work-kicker':'Explorá el portfolio','work-title':'Elegí un área.<br>Descubrí el trabajo.',
+'work-description':'Cada área abre su propia página, con una breve presentación y muestras visuales que podés ver directamente.',
+'area-writing':'Escritura y contenido','area-writing-p':'Ficción, escritura reflexiva y contenido editorial.',
+'area-voice':'Laboratorio de voz','area-voice-p':'Narración infantil, español argentino y muestras de voz.',
+'area-translation':'Traducción y edición','area-translation-p':'Traducción, corrección, localización y control de calidad.',
+'area-admin':'Administración y datos','area-admin-p':'Gestión documental, informes y experiencia de cliente.',
+'area-visual':'Diseño visual','area-visual-p':'Diseño gráfico, maquetación editorial y edición de vídeo.',
+'area-about':'Sobre mí','area-about-p':'Mi perfil creativo, recorrido profesional y retrato.',
+'area-services':'Servicios','area-services-p':'Cómo puedo colaborar en tu próximo proyecto.'
+});
+
+function setLanguage(lang){const dict=translations[lang]||translations.en;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const v=dict[el.dataset.i18n];if(v!==undefined)el.innerHTML=v});document.getElementById('page-title').textContent=dict['page-title'];document.getElementById('meta-description').setAttribute('content',dict['meta-description']);document.getElementById('lang-en').setAttribute('aria-pressed',String(lang==='en'));document.getElementById('lang-es').setAttribute('aria-pressed',String(lang==='es'));try{localStorage.setItem('nadyaPortfolioLanguage',lang)}catch(e){}}
+function fallbackImage(img,base){const exts=['.jpg','.jpeg','.webp','.png'];const i=Number(img.dataset.try||0);if(i>=exts.length){img.style.display='none';return}img.dataset.try=String(i+1);img.src=img.src.replace(/\.(jpg|jpeg|webp|png)$/i,'')+exts[i]}
+document.addEventListener('DOMContentLoaded',()=>{document.getElementById('lang-en').addEventListener('click',()=>setLanguage('en'));document.getElementById('lang-es').addEventListener('click',()=>setLanguage('es'));});
+let savedLanguage='en';try{savedLanguage=localStorage.getItem('nadyaPortfolioLanguage')||'en'}catch(e){}setLanguage(savedLanguage);
+</script>
+<script>
+document.querySelectorAll('.asset-preview').forEach(img=>{img.addEventListener('click',()=>{if(img.src && img.style.display!=='none') window.open(img.src,'_blank','noopener');})});
+function tryAssetExt(img, base) {
+ const exts=['.png','.jpg','.jpeg','.webp','.PNG','.JPG'];
+ const n=Number(img.dataset.extTry||0);
+ if(n>=exts.length){img.style.display='none';return;}
+ img.dataset.extTry=String(n+1);
+ img.src=base+exts[n];
+}
+</script>
+</body></html>

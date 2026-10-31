@@ -1,0 +1,11 @@
+VERSIÓN PULIDA — NADYA PORTFOLIO 2026
+
+Cambios aplicados:
+- Se conserva la estructura multipágina y las carpetas/archivos existentes.
+- Se mantiene la paleta oscura con burdeos y rosa; la imagen de portada se ve más.
+- Se corrige el comportamiento visual para mostrar las imágenes completas sin recortarlas.
+- Se añade la imagen visible a la tarjeta “Mi antigua versión / My Former Self”.
+- Voice Lab incorpora reproductores de audio dentro de cada tarjeta y un tratamiento visual más distintivo.
+- Se mejora el interlineado de los textos de las tarjetas.
+
+Para probarlo: extraé el ZIP completo y abrí index.html desde esa carpeta. No muevas los HTML ni las subcarpetas de recursos.

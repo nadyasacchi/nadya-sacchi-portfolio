@@ -1,0 +1,21 @@
+CORRECCIONES 1 — NADYA PORTFOLIO 2026
+
+Cambios incluidos en esta ronda:
+1. Separación visual entre “Independent creative professional” y “España · Trabajo remoto internacional”.
+2. Interlineado más compacto para “Historias que perduran. / Trabajo con propósito.” en español.
+3. Corrección de rutas de imágenes que apuntaban a extensiones o nombres inexistentes.
+4. Ajuste de páginas individuales: cabecera burdeos y zona de trabajos gris oscuro para contraste.
+5. Imágenes de tarjetas configuradas para mostrarse completas (sin recortar texto ni cabezas).
+6. Se incorporan vistas previas visibles para los trabajos de administración/datos y diseño visual.
+7. Se añade una vista previa para “Bilingual essay”, manteniendo el PDF como archivo que se abre al seleccionarlo.
+8. Títulos principales de Writing, Voice, Translation, Admin y Visual vinculados al selector EN/ES.
+9. En Writing, las tarjetas marcadas ES o EN se filtran según el idioma elegido. Las piezas bilingües permanecen visibles.
+10. About Me se conserva sin cambios en esta ronda.
+
+Para probar:
+- Extraer el ZIP completo en una carpeta nueva.
+- Abrir index.html desde esa carpeta.
+- Probar EN/ES y entrar en Writing, Voice, Translation, Admin y Visual.
+- No mover los HTML fuera de la carpeta ni separar las subcarpetas de recursos.
+
+Nota: esta ronda corrige rutas y estructura visual sobre los archivos proporcionados. La comprobación final de reproducción de audio y visualización debe hacerse también en el navegador local.

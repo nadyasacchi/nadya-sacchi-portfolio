@@ -1,0 +1,10 @@
+CORRECCIONES VISUALES DEL PORTFOLIO
+
+- Las vistas previas de las muestras usan formato 16:9 y object-fit: contain para que se vea el contenido completo sin recortarlo.
+- Las caricaturas de las cabeceras se ajustan sin recortar la cabeza y tienen una altura máxima para evitar espacios excesivos.
+- La foto de About Me se muestra completa, sin recorte automático.
+- Se conservaron los nombres originales y la estructura de los archivos de Writing & Content.
+- El sitio sigue dividido en páginas independientes.
+- No se agregó sección de contacto ni enlaces a GitHub.
+
+Para probar: extraé este ZIP en una carpeta nueva y abrí index.html. No reemplaces la web publicada hasta comprobar las imágenes.
